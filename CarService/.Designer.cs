@@ -50,7 +50,7 @@
             this.pn_reg_vim = new System.Windows.Forms.Panel();
             this.tb_vim = new System.Windows.Forms.TextBox();
             this.lbl_vim = new System.Windows.Forms.Label();
-            this.tb_registration_plate = new System.Windows.Forms.TextBox();
+            this.tb_register_sign = new System.Windows.Forms.TextBox();
             this.lbl_registration_plate = new System.Windows.Forms.Label();
             this.pn_manipulation = new System.Windows.Forms.Panel();
             this.btn_delete = new System.Windows.Forms.Button();
@@ -265,7 +265,7 @@
             // 
             this.pn_reg_vim.Controls.Add(this.tb_vim);
             this.pn_reg_vim.Controls.Add(this.lbl_vim);
-            this.pn_reg_vim.Controls.Add(this.tb_registration_plate);
+            this.pn_reg_vim.Controls.Add(this.tb_register_sign);
             this.pn_reg_vim.Controls.Add(this.lbl_registration_plate);
             this.pn_reg_vim.Dock = System.Windows.Forms.DockStyle.Left;
             this.pn_reg_vim.Location = new System.Drawing.Point(3, 16);
@@ -291,13 +291,13 @@
             this.lbl_vim.TabIndex = 29;
             this.lbl_vim.Text = "Идентификационный номер";
             // 
-            // tb_registration_plate
+            // tb_register_sign
             // 
-            this.tb_registration_plate.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tb_registration_plate.Location = new System.Drawing.Point(0, 13);
-            this.tb_registration_plate.Name = "tb_registration_plate";
-            this.tb_registration_plate.Size = new System.Drawing.Size(148, 20);
-            this.tb_registration_plate.TabIndex = 28;
+            this.tb_register_sign.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tb_register_sign.Location = new System.Drawing.Point(0, 13);
+            this.tb_register_sign.Name = "tb_register_sign";
+            this.tb_register_sign.Size = new System.Drawing.Size(148, 20);
+            this.tb_register_sign.TabIndex = 28;
             // 
             // lbl_registration_plate
             // 
@@ -433,7 +433,7 @@
         private System.Windows.Forms.Panel pn_reg_vim;
         private System.Windows.Forms.TextBox tb_vim;
         private System.Windows.Forms.Label lbl_vim;
-        private System.Windows.Forms.TextBox tb_registration_plate;
+        private System.Windows.Forms.TextBox tb_register_sign;
         private System.Windows.Forms.Label lbl_registration_plate;
         private System.Windows.Forms.Panel pn_manipulation;
         private System.Windows.Forms.Button btn_delete;

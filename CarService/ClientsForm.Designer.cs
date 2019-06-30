@@ -78,7 +78,7 @@
             this.pn_cancel.Controls.Add(this.btn_cancel);
             this.pn_cancel.Controls.Add(this.btn_errors);
             this.pn_cancel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pn_cancel.Location = new System.Drawing.Point(0, 402);
+            this.pn_cancel.Location = new System.Drawing.Point(0, 354);
             this.pn_cancel.Name = "pn_cancel";
             this.pn_cancel.Size = new System.Drawing.Size(800, 25);
             this.pn_cancel.TabIndex = 39;
@@ -140,7 +140,7 @@
             this.pn_second_name.Dock = System.Windows.Forms.DockStyle.Left;
             this.pn_second_name.Location = new System.Drawing.Point(3, 16);
             this.pn_second_name.Name = "pn_second_name";
-            this.pn_second_name.Size = new System.Drawing.Size(202, 39);
+            this.pn_second_name.Size = new System.Drawing.Size(202, 33);
             this.pn_second_name.TabIndex = 40;
             // 
             // tb_second_name
@@ -168,7 +168,7 @@
             this.pn_first_name.Dock = System.Windows.Forms.DockStyle.Left;
             this.pn_first_name.Location = new System.Drawing.Point(205, 16);
             this.pn_first_name.Name = "pn_first_name";
-            this.pn_first_name.Size = new System.Drawing.Size(202, 39);
+            this.pn_first_name.Size = new System.Drawing.Size(202, 33);
             this.pn_first_name.TabIndex = 41;
             // 
             // tb_first_name
@@ -196,7 +196,7 @@
             this.pn_patronynic.Dock = System.Windows.Forms.DockStyle.Left;
             this.pn_patronynic.Location = new System.Drawing.Point(407, 16);
             this.pn_patronynic.Name = "pn_patronynic";
-            this.pn_patronynic.Size = new System.Drawing.Size(202, 39);
+            this.pn_patronynic.Size = new System.Drawing.Size(202, 33);
             this.pn_patronynic.TabIndex = 42;
             // 
             // tb_patronynic
@@ -224,7 +224,7 @@
             this.pn_phone_number.Dock = System.Windows.Forms.DockStyle.Left;
             this.pn_phone_number.Location = new System.Drawing.Point(609, 16);
             this.pn_phone_number.Name = "pn_phone_number";
-            this.pn_phone_number.Size = new System.Drawing.Size(191, 39);
+            this.pn_phone_number.Size = new System.Drawing.Size(191, 33);
             this.pn_phone_number.TabIndex = 43;
             // 
             // tb_phone_number
@@ -254,7 +254,7 @@
             this.gb_manipulation.Controls.Add(this.pn_manipulation);
             this.gb_manipulation.Location = new System.Drawing.Point(0, 276);
             this.gb_manipulation.Name = "gb_manipulation";
-            this.gb_manipulation.Size = new System.Drawing.Size(800, 113);
+            this.gb_manipulation.Size = new System.Drawing.Size(800, 78);
             this.gb_manipulation.TabIndex = 38;
             this.gb_manipulation.TabStop = false;
             this.gb_manipulation.Text = "Манипуляция данными";
@@ -265,9 +265,9 @@
             this.pn_manipulation.Controls.Add(this.btn_update);
             this.pn_manipulation.Controls.Add(this.btn_insert);
             this.pn_manipulation.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pn_manipulation.Location = new System.Drawing.Point(3, 55);
+            this.pn_manipulation.Location = new System.Drawing.Point(3, 49);
             this.pn_manipulation.Name = "pn_manipulation";
-            this.pn_manipulation.Size = new System.Drawing.Size(794, 55);
+            this.pn_manipulation.Size = new System.Drawing.Size(794, 26);
             this.pn_manipulation.TabIndex = 39;
             // 
             // btn_delete
@@ -275,7 +275,7 @@
             this.btn_delete.Dock = System.Windows.Forms.DockStyle.Left;
             this.btn_delete.Location = new System.Drawing.Point(530, 0);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(267, 55);
+            this.btn_delete.Size = new System.Drawing.Size(267, 26);
             this.btn_delete.TabIndex = 34;
             this.btn_delete.Text = "Удалить данные клиента";
             this.btn_delete.UseVisualStyleBackColor = true;
@@ -285,7 +285,7 @@
             this.btn_update.Dock = System.Windows.Forms.DockStyle.Left;
             this.btn_update.Location = new System.Drawing.Point(265, 0);
             this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(265, 55);
+            this.btn_update.Size = new System.Drawing.Size(265, 26);
             this.btn_update.TabIndex = 33;
             this.btn_update.Text = "Изменить данные клиента";
             this.btn_update.UseVisualStyleBackColor = true;
@@ -295,7 +295,7 @@
             this.btn_insert.Dock = System.Windows.Forms.DockStyle.Left;
             this.btn_insert.Location = new System.Drawing.Point(0, 0);
             this.btn_insert.Name = "btn_insert";
-            this.btn_insert.Size = new System.Drawing.Size(265, 55);
+            this.btn_insert.Size = new System.Drawing.Size(265, 26);
             this.btn_insert.TabIndex = 32;
             this.btn_insert.Text = "Добавить данные клиента";
             this.btn_insert.UseVisualStyleBackColor = true;
@@ -304,7 +304,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 427);
+            this.ClientSize = new System.Drawing.Size(800, 379);
             this.Controls.Add(this.pn_cancel);
             this.Controls.Add(this.gb_manipulation);
             this.Controls.Add(this.dgv_clients);
