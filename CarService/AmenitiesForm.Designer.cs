@@ -31,7 +31,10 @@
             this.gb_search_filtration = new System.Windows.Forms.GroupBox();
             this.chb_filtration = new System.Windows.Forms.CheckBox();
             this.tb_search_filtration = new System.Windows.Forms.TextBox();
-            this.dgv_aminities = new System.Windows.Forms.DataGridView();
+            this.pn_cancel = new System.Windows.Forms.Panel();
+            this.btn_cancel = new System.Windows.Forms.Button();
+            this.btn_errors = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.gb_manipulation = new System.Windows.Forms.GroupBox();
             this.pn_manipulation = new System.Windows.Forms.Panel();
             this.btn_delete = new System.Windows.Forms.Button();
@@ -42,15 +45,11 @@
             this.lbl_price = new System.Windows.Forms.Label();
             this.tb_name_service = new System.Windows.Forms.TextBox();
             this.lbl_name_service = new System.Windows.Forms.Label();
-            this.pn_cancel = new System.Windows.Forms.Panel();
-            this.btn_cancel = new System.Windows.Forms.Button();
-            this.btn_errors = new System.Windows.Forms.Button();
             this.gb_search_filtration.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_aminities)).BeginInit();
+            this.pn_cancel.SuspendLayout();
             this.gb_manipulation.SuspendLayout();
             this.pn_manipulation.SuspendLayout();
             this.pn_service_data.SuspendLayout();
-            this.pn_cancel.SuspendLayout();
             this.SuspendLayout();
             // 
             // gb_search_filtration
@@ -84,24 +83,54 @@
             this.tb_search_filtration.Size = new System.Drawing.Size(187, 20);
             this.tb_search_filtration.TabIndex = 0;
             // 
-            // dgv_aminities
+            // pn_cancel
             // 
-            this.dgv_aminities.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_aminities.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dgv_aminities.Location = new System.Drawing.Point(0, 38);
-            this.dgv_aminities.Name = "dgv_aminities";
-            this.dgv_aminities.Size = new System.Drawing.Size(300, 238);
-            this.dgv_aminities.TabIndex = 39;
+            this.pn_cancel.Controls.Add(this.btn_cancel);
+            this.pn_cancel.Controls.Add(this.btn_errors);
+            this.pn_cancel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pn_cancel.Location = new System.Drawing.Point(0, 438);
+            this.pn_cancel.Name = "pn_cancel";
+            this.pn_cancel.Size = new System.Drawing.Size(300, 25);
+            this.pn_cancel.TabIndex = 41;
+            // 
+            // btn_cancel
+            // 
+            this.btn_cancel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_cancel.Location = new System.Drawing.Point(228, 0);
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.Size = new System.Drawing.Size(72, 25);
+            this.btn_cancel.TabIndex = 36;
+            this.btn_cancel.Text = "Закрыть";
+            this.btn_cancel.UseVisualStyleBackColor = true;
+            // 
+            // btn_errors
+            // 
+            this.btn_errors.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btn_errors.Location = new System.Drawing.Point(0, 0);
+            this.btn_errors.Name = "btn_errors";
+            this.btn_errors.Size = new System.Drawing.Size(67, 25);
+            this.btn_errors.TabIndex = 35;
+            this.btn_errors.Text = "Ошибки";
+            this.btn_errors.UseVisualStyleBackColor = true;
+            // 
+            // listBox1
+            // 
+            this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(0, 38);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(300, 400);
+            this.listBox1.TabIndex = 37;
             // 
             // gb_manipulation
             // 
             this.gb_manipulation.Controls.Add(this.pn_manipulation);
             this.gb_manipulation.Controls.Add(this.pn_service_data);
-            this.gb_manipulation.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gb_manipulation.Location = new System.Drawing.Point(0, 276);
+            this.gb_manipulation.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.gb_manipulation.Location = new System.Drawing.Point(0, 274);
             this.gb_manipulation.Name = "gb_manipulation";
             this.gb_manipulation.Size = new System.Drawing.Size(300, 164);
-            this.gb_manipulation.TabIndex = 40;
+            this.gb_manipulation.TabIndex = 42;
             this.gb_manipulation.TabStop = false;
             this.gb_manipulation.Text = "Манипуляция данными";
             // 
@@ -194,55 +223,24 @@
             this.lbl_name_service.TabIndex = 27;
             this.lbl_name_service.Text = "Название услуги";
             // 
-            // pn_cancel
-            // 
-            this.pn_cancel.Controls.Add(this.btn_cancel);
-            this.pn_cancel.Controls.Add(this.btn_errors);
-            this.pn_cancel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pn_cancel.Location = new System.Drawing.Point(0, 438);
-            this.pn_cancel.Name = "pn_cancel";
-            this.pn_cancel.Size = new System.Drawing.Size(300, 25);
-            this.pn_cancel.TabIndex = 41;
-            // 
-            // btn_cancel
-            // 
-            this.btn_cancel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_cancel.Location = new System.Drawing.Point(228, 0);
-            this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(72, 25);
-            this.btn_cancel.TabIndex = 36;
-            this.btn_cancel.Text = "Закрыть";
-            this.btn_cancel.UseVisualStyleBackColor = true;
-            // 
-            // btn_errors
-            // 
-            this.btn_errors.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_errors.Location = new System.Drawing.Point(0, 0);
-            this.btn_errors.Name = "btn_errors";
-            this.btn_errors.Size = new System.Drawing.Size(67, 25);
-            this.btn_errors.TabIndex = 35;
-            this.btn_errors.Text = "Ошибки";
-            this.btn_errors.UseVisualStyleBackColor = true;
-            // 
             // AmenitiesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(300, 463);
-            this.Controls.Add(this.pn_cancel);
             this.Controls.Add(this.gb_manipulation);
-            this.Controls.Add(this.dgv_aminities);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.pn_cancel);
             this.Controls.Add(this.gb_search_filtration);
             this.Name = "AmenitiesForm";
             this.Text = "Amenities";
             this.gb_search_filtration.ResumeLayout(false);
             this.gb_search_filtration.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_aminities)).EndInit();
+            this.pn_cancel.ResumeLayout(false);
             this.gb_manipulation.ResumeLayout(false);
             this.pn_manipulation.ResumeLayout(false);
             this.pn_service_data.ResumeLayout(false);
             this.pn_service_data.PerformLayout();
-            this.pn_cancel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -252,19 +250,19 @@
         private System.Windows.Forms.GroupBox gb_search_filtration;
         private System.Windows.Forms.CheckBox chb_filtration;
         private System.Windows.Forms.TextBox tb_search_filtration;
-        private System.Windows.Forms.DataGridView dgv_aminities;
+        private System.Windows.Forms.Panel pn_cancel;
+        private System.Windows.Forms.Button btn_cancel;
+        private System.Windows.Forms.Button btn_errors;
+        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.GroupBox gb_manipulation;
+        private System.Windows.Forms.Panel pn_manipulation;
+        private System.Windows.Forms.Button btn_delete;
+        private System.Windows.Forms.Button btn_update;
+        private System.Windows.Forms.Button btn_insert;
         private System.Windows.Forms.Panel pn_service_data;
         private System.Windows.Forms.TextBox tb_price;
         private System.Windows.Forms.Label lbl_price;
         private System.Windows.Forms.TextBox tb_name_service;
         private System.Windows.Forms.Label lbl_name_service;
-        private System.Windows.Forms.Panel pn_manipulation;
-        private System.Windows.Forms.Button btn_delete;
-        private System.Windows.Forms.Button btn_update;
-        private System.Windows.Forms.Button btn_insert;
-        private System.Windows.Forms.Panel pn_cancel;
-        private System.Windows.Forms.Button btn_cancel;
-        private System.Windows.Forms.Button btn_errors;
     }
 }
