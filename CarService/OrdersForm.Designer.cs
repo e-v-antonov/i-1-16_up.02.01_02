@@ -1,6 +1,6 @@
 ﻿namespace CarService
 {
-    partial class Orders
+    partial class OrdersForm
     {
         /// <summary>
         /// Required designer variable.
@@ -37,26 +37,26 @@
             this.dgv_clients = new System.Windows.Forms.DataGridView();
             this.dgv_cars = new System.Windows.Forms.DataGridView();
             this.pn_cars_clients = new System.Windows.Forms.Panel();
-            this.lbl_cars = new System.Windows.Forms.Label();
-            this.cb_cars = new System.Windows.Forms.ComboBox();
-            this.gb_manipulation = new System.Windows.Forms.GroupBox();
-            this.btn_insert = new System.Windows.Forms.Button();
-            this.btn_update = new System.Windows.Forms.Button();
-            this.btn_delete = new System.Windows.Forms.Button();
-            this.pn_manipulation = new System.Windows.Forms.Panel();
-            this.pn_docs = new System.Windows.Forms.Panel();
-            this.lbl_clients = new System.Windows.Forms.Label();
             this.cb_clients = new System.Windows.Forms.ComboBox();
-            this.btn_form_check = new System.Windows.Forms.Button();
+            this.lbl_clients = new System.Windows.Forms.Label();
+            this.cb_cars = new System.Windows.Forms.ComboBox();
+            this.lbl_cars = new System.Windows.Forms.Label();
+            this.gb_manipulation = new System.Windows.Forms.GroupBox();
+            this.pn_docs = new System.Windows.Forms.Panel();
             this.btn_form_act = new System.Windows.Forms.Button();
+            this.btn_form_check = new System.Windows.Forms.Button();
+            this.pn_manipulation = new System.Windows.Forms.Panel();
+            this.btn_delete = new System.Windows.Forms.Button();
+            this.btn_update = new System.Windows.Forms.Button();
+            this.btn_insert = new System.Windows.Forms.Button();
             this.gb_search_filtration.SuspendLayout();
             this.pn_cancel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_clients)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_cars)).BeginInit();
             this.pn_cars_clients.SuspendLayout();
             this.gb_manipulation.SuspendLayout();
-            this.pn_manipulation.SuspendLayout();
             this.pn_docs.SuspendLayout();
+            this.pn_manipulation.SuspendLayout();
             this.SuspendLayout();
             // 
             // tb_search_filtration
@@ -150,15 +150,24 @@
             this.pn_cars_clients.Size = new System.Drawing.Size(401, 66);
             this.pn_cars_clients.TabIndex = 43;
             // 
-            // lbl_cars
+            // cb_clients
             // 
-            this.lbl_cars.AutoSize = true;
-            this.lbl_cars.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_cars.Location = new System.Drawing.Point(0, 0);
-            this.lbl_cars.Name = "lbl_cars";
-            this.lbl_cars.Size = new System.Drawing.Size(69, 13);
-            this.lbl_cars.TabIndex = 29;
-            this.lbl_cars.Text = "Автомобили";
+            this.cb_clients.Dock = System.Windows.Forms.DockStyle.Top;
+            this.cb_clients.FormattingEnabled = true;
+            this.cb_clients.Location = new System.Drawing.Point(0, 47);
+            this.cb_clients.Name = "cb_clients";
+            this.cb_clients.Size = new System.Drawing.Size(401, 21);
+            this.cb_clients.TabIndex = 32;
+            // 
+            // lbl_clients
+            // 
+            this.lbl_clients.AutoSize = true;
+            this.lbl_clients.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_clients.Location = new System.Drawing.Point(0, 34);
+            this.lbl_clients.Name = "lbl_clients";
+            this.lbl_clients.Size = new System.Drawing.Size(51, 13);
+            this.lbl_clients.TabIndex = 31;
+            this.lbl_clients.Text = "Клиенты";
             // 
             // cb_cars
             // 
@@ -168,6 +177,16 @@
             this.cb_cars.Name = "cb_cars";
             this.cb_cars.Size = new System.Drawing.Size(401, 21);
             this.cb_cars.TabIndex = 30;
+            // 
+            // lbl_cars
+            // 
+            this.lbl_cars.AutoSize = true;
+            this.lbl_cars.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_cars.Location = new System.Drawing.Point(0, 0);
+            this.lbl_cars.Name = "lbl_cars";
+            this.lbl_cars.Size = new System.Drawing.Size(69, 13);
+            this.lbl_cars.TabIndex = 29;
+            this.lbl_cars.Text = "Автомобили";
             // 
             // gb_manipulation
             // 
@@ -182,35 +201,35 @@
             this.gb_manipulation.TabStop = false;
             this.gb_manipulation.Text = "Манипуляция данными";
             // 
-            // btn_insert
+            // pn_docs
             // 
-            this.btn_insert.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_insert.Location = new System.Drawing.Point(0, 0);
-            this.btn_insert.Name = "btn_insert";
-            this.btn_insert.Size = new System.Drawing.Size(265, 27);
-            this.btn_insert.TabIndex = 32;
-            this.btn_insert.Text = "Добавить данные автомобиля";
-            this.btn_insert.UseVisualStyleBackColor = true;
+            this.pn_docs.Controls.Add(this.btn_form_act);
+            this.pn_docs.Controls.Add(this.btn_form_check);
+            this.pn_docs.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pn_docs.Location = new System.Drawing.Point(404, 43);
+            this.pn_docs.Name = "pn_docs";
+            this.pn_docs.Size = new System.Drawing.Size(393, 67);
+            this.pn_docs.TabIndex = 44;
             // 
-            // btn_update
+            // btn_form_act
             // 
-            this.btn_update.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_update.Location = new System.Drawing.Point(265, 0);
-            this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(265, 27);
-            this.btn_update.TabIndex = 33;
-            this.btn_update.Text = "Изменить данные автомобиля";
-            this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_form_act.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_form_act.Location = new System.Drawing.Point(0, 34);
+            this.btn_form_act.Name = "btn_form_act";
+            this.btn_form_act.Size = new System.Drawing.Size(393, 34);
+            this.btn_form_act.TabIndex = 36;
+            this.btn_form_act.Text = "Формирование акта о выполненных услугах";
+            this.btn_form_act.UseVisualStyleBackColor = true;
             // 
-            // btn_delete
+            // btn_form_check
             // 
-            this.btn_delete.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_delete.Location = new System.Drawing.Point(530, 0);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(265, 27);
-            this.btn_delete.TabIndex = 34;
-            this.btn_delete.Text = "Удалить данные автомобиля";
-            this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_form_check.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_form_check.Location = new System.Drawing.Point(0, 0);
+            this.btn_form_check.Name = "btn_form_check";
+            this.btn_form_check.Size = new System.Drawing.Size(393, 34);
+            this.btn_form_check.TabIndex = 35;
+            this.btn_form_check.Text = "Формирование кассвого чека";
+            this.btn_form_check.UseVisualStyleBackColor = true;
             // 
             // pn_manipulation
             // 
@@ -223,56 +242,37 @@
             this.pn_manipulation.Size = new System.Drawing.Size(794, 27);
             this.pn_manipulation.TabIndex = 39;
             // 
-            // pn_docs
+            // btn_delete
             // 
-            this.pn_docs.Controls.Add(this.btn_form_act);
-            this.pn_docs.Controls.Add(this.btn_form_check);
-            this.pn_docs.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pn_docs.Location = new System.Drawing.Point(404, 43);
-            this.pn_docs.Name = "pn_docs";
-            this.pn_docs.Size = new System.Drawing.Size(393, 67);
-            this.pn_docs.TabIndex = 44;
+            this.btn_delete.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btn_delete.Location = new System.Drawing.Point(530, 0);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(265, 27);
+            this.btn_delete.TabIndex = 34;
+            this.btn_delete.Text = "Удалить данные автомобиля";
+            this.btn_delete.UseVisualStyleBackColor = true;
             // 
-            // lbl_clients
+            // btn_update
             // 
-            this.lbl_clients.AutoSize = true;
-            this.lbl_clients.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_clients.Location = new System.Drawing.Point(0, 34);
-            this.lbl_clients.Name = "lbl_clients";
-            this.lbl_clients.Size = new System.Drawing.Size(51, 13);
-            this.lbl_clients.TabIndex = 31;
-            this.lbl_clients.Text = "Клиенты";
+            this.btn_update.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btn_update.Location = new System.Drawing.Point(265, 0);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(265, 27);
+            this.btn_update.TabIndex = 33;
+            this.btn_update.Text = "Изменить данные автомобиля";
+            this.btn_update.UseVisualStyleBackColor = true;
             // 
-            // cb_clients
+            // btn_insert
             // 
-            this.cb_clients.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cb_clients.FormattingEnabled = true;
-            this.cb_clients.Location = new System.Drawing.Point(0, 47);
-            this.cb_clients.Name = "cb_clients";
-            this.cb_clients.Size = new System.Drawing.Size(401, 21);
-            this.cb_clients.TabIndex = 32;
+            this.btn_insert.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btn_insert.Location = new System.Drawing.Point(0, 0);
+            this.btn_insert.Name = "btn_insert";
+            this.btn_insert.Size = new System.Drawing.Size(265, 27);
+            this.btn_insert.TabIndex = 32;
+            this.btn_insert.Text = "Добавить данные автомобиля";
+            this.btn_insert.UseVisualStyleBackColor = true;
             // 
-            // btn_form_check
-            // 
-            this.btn_form_check.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_form_check.Location = new System.Drawing.Point(0, 0);
-            this.btn_form_check.Name = "btn_form_check";
-            this.btn_form_check.Size = new System.Drawing.Size(393, 34);
-            this.btn_form_check.TabIndex = 35;
-            this.btn_form_check.Text = "Формирование кассвого чека";
-            this.btn_form_check.UseVisualStyleBackColor = true;
-            // 
-            // btn_form_act
-            // 
-            this.btn_form_act.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_form_act.Location = new System.Drawing.Point(0, 34);
-            this.btn_form_act.Name = "btn_form_act";
-            this.btn_form_act.Size = new System.Drawing.Size(393, 34);
-            this.btn_form_act.TabIndex = 36;
-            this.btn_form_act.Text = "Формирование акта о выполненных услугах";
-            this.btn_form_act.UseVisualStyleBackColor = true;
-            // 
-            // Orders
+            // OrdersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -282,7 +282,7 @@
             this.Controls.Add(this.gb_manipulation);
             this.Controls.Add(this.pn_cancel);
             this.Controls.Add(this.gb_search_filtration);
-            this.Name = "Orders";
+            this.Name = "OrdersForm";
             this.Text = "Справочник Заказы";
             this.gb_search_filtration.ResumeLayout(false);
             this.gb_search_filtration.PerformLayout();
@@ -292,8 +292,8 @@
             this.pn_cars_clients.ResumeLayout(false);
             this.pn_cars_clients.PerformLayout();
             this.gb_manipulation.ResumeLayout(false);
-            this.pn_manipulation.ResumeLayout(false);
             this.pn_docs.ResumeLayout(false);
+            this.pn_manipulation.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

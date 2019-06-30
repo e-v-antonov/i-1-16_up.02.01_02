@@ -31,7 +31,6 @@
             this.btn_errors = new System.Windows.Forms.Button();
             this.pn_cancel = new System.Windows.Forms.Panel();
             this.btn_cancel = new System.Windows.Forms.Button();
-            this.dgv_clients = new System.Windows.Forms.DataGridView();
             this.chb_filtration = new System.Windows.Forms.CheckBox();
             this.tb_search_filtration = new System.Windows.Forms.TextBox();
             this.gb_search_filtration = new System.Windows.Forms.GroupBox();
@@ -52,8 +51,8 @@
             this.btn_delete = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_insert = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.pn_cancel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_clients)).BeginInit();
             this.gb_search_filtration.SuspendLayout();
             this.pn_second_name.SuspendLayout();
             this.pn_first_name.SuspendLayout();
@@ -93,22 +92,13 @@
             this.btn_cancel.Text = "Закрыть";
             this.btn_cancel.UseVisualStyleBackColor = true;
             // 
-            // dgv_clients
-            // 
-            this.dgv_clients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_clients.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dgv_clients.Location = new System.Drawing.Point(0, 38);
-            this.dgv_clients.Name = "dgv_clients";
-            this.dgv_clients.Size = new System.Drawing.Size(800, 238);
-            this.dgv_clients.TabIndex = 37;
-            // 
             // chb_filtration
             // 
             this.chb_filtration.AutoSize = true;
             this.chb_filtration.Dock = System.Windows.Forms.DockStyle.Top;
-            this.chb_filtration.Location = new System.Drawing.Point(514, 16);
+            this.chb_filtration.Location = new System.Drawing.Point(687, 16);
             this.chb_filtration.Name = "chb_filtration";
-            this.chb_filtration.Size = new System.Drawing.Size(283, 17);
+            this.chb_filtration.Size = new System.Drawing.Size(110, 17);
             this.chb_filtration.TabIndex = 1;
             this.chb_filtration.Text = "Отфильтровать";
             this.chb_filtration.UseVisualStyleBackColor = true;
@@ -118,7 +108,7 @@
             this.tb_search_filtration.Dock = System.Windows.Forms.DockStyle.Left;
             this.tb_search_filtration.Location = new System.Drawing.Point(3, 16);
             this.tb_search_filtration.Name = "tb_search_filtration";
-            this.tb_search_filtration.Size = new System.Drawing.Size(511, 20);
+            this.tb_search_filtration.Size = new System.Drawing.Size(684, 20);
             this.tb_search_filtration.TabIndex = 0;
             // 
             // gb_search_filtration
@@ -300,19 +290,27 @@
             this.btn_insert.Text = "Добавить данные клиента";
             this.btn_insert.UseVisualStyleBackColor = true;
             // 
+            // listBox1
+            // 
+            this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(0, 38);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(800, 316);
+            this.listBox1.TabIndex = 40;
+            // 
             // ClientsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 379);
-            this.Controls.Add(this.pn_cancel);
             this.Controls.Add(this.gb_manipulation);
-            this.Controls.Add(this.dgv_clients);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.pn_cancel);
             this.Controls.Add(this.gb_search_filtration);
             this.Name = "ClientsForm";
             this.Text = "Справочник Клиенты";
             this.pn_cancel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_clients)).EndInit();
             this.gb_search_filtration.ResumeLayout(false);
             this.gb_search_filtration.PerformLayout();
             this.pn_second_name.ResumeLayout(false);
@@ -334,7 +332,6 @@
         private System.Windows.Forms.Button btn_errors;
         private System.Windows.Forms.Panel pn_cancel;
         private System.Windows.Forms.Button btn_cancel;
-        private System.Windows.Forms.DataGridView dgv_clients;
         private System.Windows.Forms.CheckBox chb_filtration;
         private System.Windows.Forms.TextBox tb_search_filtration;
         private System.Windows.Forms.GroupBox gb_search_filtration;
@@ -355,5 +352,6 @@
         private System.Windows.Forms.Button btn_delete;
         private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Button btn_insert;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

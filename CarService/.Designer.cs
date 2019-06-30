@@ -31,7 +31,6 @@
             this.gb_search_filtration = new System.Windows.Forms.GroupBox();
             this.chb_filtration = new System.Windows.Forms.CheckBox();
             this.tb_search_filtration = new System.Windows.Forms.TextBox();
-            this.dgv_cars = new System.Windows.Forms.DataGridView();
             this.gb_manipulation = new System.Windows.Forms.GroupBox();
             this.pn_client_formKlients = new System.Windows.Forms.Panel();
             this.btn_from_clients = new System.Windows.Forms.Button();
@@ -59,8 +58,8 @@
             this.pn_cancel = new System.Windows.Forms.Panel();
             this.btn_cancel = new System.Windows.Forms.Button();
             this.btn_errors = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.gb_search_filtration.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_cars)).BeginInit();
             this.gb_manipulation.SuspendLayout();
             this.pn_client_formKlients.SuspendLayout();
             this.pn_color_year_made.SuspendLayout();
@@ -101,15 +100,6 @@
             this.tb_search_filtration.Size = new System.Drawing.Size(511, 20);
             this.tb_search_filtration.TabIndex = 0;
             // 
-            // dgv_cars
-            // 
-            this.dgv_cars.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_cars.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dgv_cars.Location = new System.Drawing.Point(0, 38);
-            this.dgv_cars.Name = "dgv_cars";
-            this.dgv_cars.Size = new System.Drawing.Size(625, 238);
-            this.dgv_cars.TabIndex = 1;
-            // 
             // gb_manipulation
             // 
             this.gb_manipulation.Controls.Add(this.pn_client_formKlients);
@@ -117,8 +107,8 @@
             this.gb_manipulation.Controls.Add(this.pn_brand_model);
             this.gb_manipulation.Controls.Add(this.pn_reg_vim);
             this.gb_manipulation.Controls.Add(this.pn_manipulation);
-            this.gb_manipulation.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gb_manipulation.Location = new System.Drawing.Point(0, 276);
+            this.gb_manipulation.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.gb_manipulation.Location = new System.Drawing.Point(0, 333);
             this.gb_manipulation.Name = "gb_manipulation";
             this.gb_manipulation.Size = new System.Drawing.Size(625, 113);
             this.gb_manipulation.TabIndex = 2;
@@ -355,7 +345,7 @@
             this.pn_cancel.Controls.Add(this.btn_cancel);
             this.pn_cancel.Controls.Add(this.btn_errors);
             this.pn_cancel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pn_cancel.Location = new System.Drawing.Point(0, 421);
+            this.pn_cancel.Location = new System.Drawing.Point(0, 308);
             this.pn_cancel.Name = "pn_cancel";
             this.pn_cancel.Size = new System.Drawing.Size(625, 25);
             this.pn_cancel.TabIndex = 35;
@@ -380,20 +370,28 @@
             this.btn_errors.Text = "Ошибки";
             this.btn_errors.UseVisualStyleBackColor = true;
             // 
+            // listBox1
+            // 
+            this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(0, 38);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(625, 270);
+            this.listBox1.TabIndex = 44;
+            // 
             // CarsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(625, 446);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.pn_cancel);
             this.Controls.Add(this.gb_manipulation);
-            this.Controls.Add(this.dgv_cars);
             this.Controls.Add(this.gb_search_filtration);
             this.Name = "CarsForm";
             this.Text = "Справочник Автомобили";
             this.gb_search_filtration.ResumeLayout(false);
             this.gb_search_filtration.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_cars)).EndInit();
             this.gb_manipulation.ResumeLayout(false);
             this.pn_client_formKlients.ResumeLayout(false);
             this.pn_client_formKlients.PerformLayout();
@@ -414,7 +412,6 @@
         private System.Windows.Forms.GroupBox gb_search_filtration;
         private System.Windows.Forms.CheckBox chb_filtration;
         private System.Windows.Forms.TextBox tb_search_filtration;
-        private System.Windows.Forms.DataGridView dgv_cars;
         private System.Windows.Forms.GroupBox gb_manipulation;
         private System.Windows.Forms.Panel pn_client_formKlients;
         private System.Windows.Forms.Button btn_from_clients;
@@ -442,6 +439,7 @@
         private System.Windows.Forms.Panel pn_cancel;
         private System.Windows.Forms.Button btn_cancel;
         private System.Windows.Forms.Button btn_errors;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 

@@ -29,34 +29,35 @@
         private void InitializeComponent()
         {
             this.gb_client_car = new System.Windows.Forms.GroupBox();
+            this.pn_indetification_registration = new System.Windows.Forms.Panel();
+            this.btn_identification_client = new System.Windows.Forms.Button();
             this.btn_registration_client = new System.Windows.Forms.Button();
-            this.lbl_second_name = new System.Windows.Forms.Label();
-            this.tb_second_name_client = new System.Windows.Forms.TextBox();
-            this.pn_second_name_register = new System.Windows.Forms.Panel();
-            this.pn_first_name_identification = new System.Windows.Forms.Panel();
-            this.tb_first_name = new System.Windows.Forms.TextBox();
-            this.lbl_first_name = new System.Windows.Forms.Label();
-            this.pn_patronymic_reg_car = new System.Windows.Forms.Panel();
-            this.tb_otchestvo = new System.Windows.Forms.TextBox();
-            this.lbl_otchestvo = new System.Windows.Forms.Label();
             this.pn_phone_number = new System.Windows.Forms.Panel();
             this.tb_phone_number = new System.Windows.Forms.TextBox();
             this.lbl_phone_number = new System.Windows.Forms.Label();
-            this.pn_indetification_registration = new System.Windows.Forms.Panel();
-            this.tb_register_sign = new System.Windows.Forms.TextBox();
-            this.lbl_register_sign = new System.Windows.Forms.Label();
+            this.pn_patronymic_reg_car = new System.Windows.Forms.Panel();
+            this.btn_reg_car = new System.Windows.Forms.Button();
+            this.tb_otchestvo = new System.Windows.Forms.TextBox();
+            this.lbl_otchestvo = new System.Windows.Forms.Label();
+            this.pn_first_name_identification = new System.Windows.Forms.Panel();
             this.tb_identification_number = new System.Windows.Forms.TextBox();
             this.lbl_identification_number = new System.Windows.Forms.Label();
-            this.btn_reg_car = new System.Windows.Forms.Button();
-            this.btn_identification_client = new System.Windows.Forms.Button();
+            this.tb_first_name = new System.Windows.Forms.TextBox();
+            this.lbl_first_name = new System.Windows.Forms.Label();
+            this.pn_second_name_register = new System.Windows.Forms.Panel();
+            this.tb_register_sign = new System.Windows.Forms.TextBox();
+            this.lbl_register_sign = new System.Windows.Forms.Label();
+            this.tb_second_name_client = new System.Windows.Forms.TextBox();
+            this.lbl_second_name = new System.Windows.Forms.Label();
             this.tb_search_order = new System.Windows.Forms.TextBox();
             this.dgv_orders = new System.Windows.Forms.DataGridView();
             this.pn_docs = new System.Windows.Forms.Panel();
-            this.btn_check = new System.Windows.Forms.Button();
             this.btn_act = new System.Windows.Forms.Button();
+            this.btn_check = new System.Windows.Forms.Button();
             this.pn_docs_price = new System.Windows.Forms.Panel();
             this.pn_price = new System.Windows.Forms.Panel();
             this.pn_post_summ_take = new System.Windows.Forms.Panel();
+            this.btn_take_order = new System.Windows.Forms.Button();
             this.tb_post_summ = new System.Windows.Forms.TextBox();
             this.lbl_post_summ = new System.Windows.Forms.Label();
             this.pn_discount = new System.Windows.Forms.Panel();
@@ -68,13 +69,12 @@
             this.pn_cancel = new System.Windows.Forms.Panel();
             this.btn_cancel = new System.Windows.Forms.Button();
             this.btn_errors = new System.Windows.Forms.Button();
-            this.btn_take_order = new System.Windows.Forms.Button();
             this.gb_client_car.SuspendLayout();
-            this.pn_second_name_register.SuspendLayout();
-            this.pn_first_name_identification.SuspendLayout();
-            this.pn_patronymic_reg_car.SuspendLayout();
-            this.pn_phone_number.SuspendLayout();
             this.pn_indetification_registration.SuspendLayout();
+            this.pn_phone_number.SuspendLayout();
+            this.pn_patronymic_reg_car.SuspendLayout();
+            this.pn_first_name_identification.SuspendLayout();
+            this.pn_second_name_register.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_orders)).BeginInit();
             this.pn_docs.SuspendLayout();
             this.pn_docs_price.SuspendLayout();
@@ -100,6 +100,26 @@
             this.gb_client_car.TabStop = false;
             this.gb_client_car.Text = "Клиенты и автомобили";
             // 
+            // pn_indetification_registration
+            // 
+            this.pn_indetification_registration.Controls.Add(this.btn_identification_client);
+            this.pn_indetification_registration.Controls.Add(this.btn_registration_client);
+            this.pn_indetification_registration.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pn_indetification_registration.Location = new System.Drawing.Point(538, 16);
+            this.pn_indetification_registration.Name = "pn_indetification_registration";
+            this.pn_indetification_registration.Size = new System.Drawing.Size(259, 71);
+            this.pn_indetification_registration.TabIndex = 9;
+            // 
+            // btn_identification_client
+            // 
+            this.btn_identification_client.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_identification_client.Location = new System.Drawing.Point(9, 0);
+            this.btn_identification_client.Name = "btn_identification_client";
+            this.btn_identification_client.Size = new System.Drawing.Size(125, 71);
+            this.btn_identification_client.TabIndex = 0;
+            this.btn_identification_client.Text = "Идентификация клиента";
+            this.btn_identification_client.UseVisualStyleBackColor = true;
+            // 
             // btn_registration_client
             // 
             this.btn_registration_client.Dock = System.Windows.Forms.DockStyle.Right;
@@ -109,95 +129,6 @@
             this.btn_registration_client.TabIndex = 0;
             this.btn_registration_client.Text = "Регистрация \r\nклиента";
             this.btn_registration_client.UseVisualStyleBackColor = true;
-            // 
-            // lbl_second_name
-            // 
-            this.lbl_second_name.AutoSize = true;
-            this.lbl_second_name.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_second_name.Location = new System.Drawing.Point(0, 0);
-            this.lbl_second_name.Name = "lbl_second_name";
-            this.lbl_second_name.Size = new System.Drawing.Size(100, 13);
-            this.lbl_second_name.TabIndex = 1;
-            this.lbl_second_name.Text = "Фамилия клиента";
-            // 
-            // tb_second_name_client
-            // 
-            this.tb_second_name_client.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tb_second_name_client.Location = new System.Drawing.Point(0, 13);
-            this.tb_second_name_client.Name = "tb_second_name_client";
-            this.tb_second_name_client.Size = new System.Drawing.Size(129, 20);
-            this.tb_second_name_client.TabIndex = 2;
-            // 
-            // pn_second_name_register
-            // 
-            this.pn_second_name_register.Controls.Add(this.tb_register_sign);
-            this.pn_second_name_register.Controls.Add(this.lbl_register_sign);
-            this.pn_second_name_register.Controls.Add(this.tb_second_name_client);
-            this.pn_second_name_register.Controls.Add(this.lbl_second_name);
-            this.pn_second_name_register.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pn_second_name_register.Location = new System.Drawing.Point(3, 16);
-            this.pn_second_name_register.Name = "pn_second_name_register";
-            this.pn_second_name_register.Size = new System.Drawing.Size(129, 71);
-            this.pn_second_name_register.TabIndex = 4;
-            // 
-            // pn_first_name_identification
-            // 
-            this.pn_first_name_identification.Controls.Add(this.tb_identification_number);
-            this.pn_first_name_identification.Controls.Add(this.lbl_identification_number);
-            this.pn_first_name_identification.Controls.Add(this.tb_first_name);
-            this.pn_first_name_identification.Controls.Add(this.lbl_first_name);
-            this.pn_first_name_identification.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pn_first_name_identification.Location = new System.Drawing.Point(132, 16);
-            this.pn_first_name_identification.Name = "pn_first_name_identification";
-            this.pn_first_name_identification.Size = new System.Drawing.Size(156, 71);
-            this.pn_first_name_identification.TabIndex = 6;
-            // 
-            // tb_first_name
-            // 
-            this.tb_first_name.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tb_first_name.Location = new System.Drawing.Point(0, 13);
-            this.tb_first_name.Name = "tb_first_name";
-            this.tb_first_name.Size = new System.Drawing.Size(156, 20);
-            this.tb_first_name.TabIndex = 2;
-            // 
-            // lbl_first_name
-            // 
-            this.lbl_first_name.AutoSize = true;
-            this.lbl_first_name.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_first_name.Location = new System.Drawing.Point(0, 0);
-            this.lbl_first_name.Name = "lbl_first_name";
-            this.lbl_first_name.Size = new System.Drawing.Size(73, 13);
-            this.lbl_first_name.TabIndex = 1;
-            this.lbl_first_name.Text = "Имя клиента";
-            // 
-            // pn_patronymic_reg_car
-            // 
-            this.pn_patronymic_reg_car.Controls.Add(this.btn_reg_car);
-            this.pn_patronymic_reg_car.Controls.Add(this.tb_otchestvo);
-            this.pn_patronymic_reg_car.Controls.Add(this.lbl_otchestvo);
-            this.pn_patronymic_reg_car.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pn_patronymic_reg_car.Location = new System.Drawing.Point(288, 16);
-            this.pn_patronymic_reg_car.Name = "pn_patronymic_reg_car";
-            this.pn_patronymic_reg_car.Size = new System.Drawing.Size(112, 71);
-            this.pn_patronymic_reg_car.TabIndex = 7;
-            // 
-            // tb_otchestvo
-            // 
-            this.tb_otchestvo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tb_otchestvo.Location = new System.Drawing.Point(0, 13);
-            this.tb_otchestvo.Name = "tb_otchestvo";
-            this.tb_otchestvo.Size = new System.Drawing.Size(112, 20);
-            this.tb_otchestvo.TabIndex = 2;
-            // 
-            // lbl_otchestvo
-            // 
-            this.lbl_otchestvo.AutoSize = true;
-            this.lbl_otchestvo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_otchestvo.Location = new System.Drawing.Point(0, 0);
-            this.lbl_otchestvo.Name = "lbl_otchestvo";
-            this.lbl_otchestvo.Size = new System.Drawing.Size(98, 13);
-            this.lbl_otchestvo.TabIndex = 1;
-            this.lbl_otchestvo.Text = "Отчество клиента";
             // 
             // pn_phone_number
             // 
@@ -227,33 +158,56 @@
             this.lbl_phone_number.TabIndex = 1;
             this.lbl_phone_number.Text = "Номер телефона клиента";
             // 
-            // pn_indetification_registration
+            // pn_patronymic_reg_car
             // 
-            this.pn_indetification_registration.Controls.Add(this.btn_identification_client);
-            this.pn_indetification_registration.Controls.Add(this.btn_registration_client);
-            this.pn_indetification_registration.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pn_indetification_registration.Location = new System.Drawing.Point(538, 16);
-            this.pn_indetification_registration.Name = "pn_indetification_registration";
-            this.pn_indetification_registration.Size = new System.Drawing.Size(259, 71);
-            this.pn_indetification_registration.TabIndex = 9;
+            this.pn_patronymic_reg_car.Controls.Add(this.btn_reg_car);
+            this.pn_patronymic_reg_car.Controls.Add(this.tb_otchestvo);
+            this.pn_patronymic_reg_car.Controls.Add(this.lbl_otchestvo);
+            this.pn_patronymic_reg_car.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pn_patronymic_reg_car.Location = new System.Drawing.Point(288, 16);
+            this.pn_patronymic_reg_car.Name = "pn_patronymic_reg_car";
+            this.pn_patronymic_reg_car.Size = new System.Drawing.Size(112, 71);
+            this.pn_patronymic_reg_car.TabIndex = 7;
             // 
-            // tb_register_sign
+            // btn_reg_car
             // 
-            this.tb_register_sign.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tb_register_sign.Location = new System.Drawing.Point(0, 46);
-            this.tb_register_sign.Name = "tb_register_sign";
-            this.tb_register_sign.Size = new System.Drawing.Size(129, 20);
-            this.tb_register_sign.TabIndex = 4;
+            this.btn_reg_car.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btn_reg_car.Location = new System.Drawing.Point(0, 33);
+            this.btn_reg_car.Name = "btn_reg_car";
+            this.btn_reg_car.Size = new System.Drawing.Size(112, 38);
+            this.btn_reg_car.TabIndex = 3;
+            this.btn_reg_car.Text = "Регистрация автомобиля";
+            this.btn_reg_car.UseVisualStyleBackColor = true;
             // 
-            // lbl_register_sign
+            // tb_otchestvo
             // 
-            this.lbl_register_sign.AutoSize = true;
-            this.lbl_register_sign.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_register_sign.Location = new System.Drawing.Point(0, 33);
-            this.lbl_register_sign.Name = "lbl_register_sign";
-            this.lbl_register_sign.Size = new System.Drawing.Size(125, 13);
-            this.lbl_register_sign.TabIndex = 3;
-            this.lbl_register_sign.Text = "Регистрационный знак";
+            this.tb_otchestvo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tb_otchestvo.Location = new System.Drawing.Point(0, 13);
+            this.tb_otchestvo.Name = "tb_otchestvo";
+            this.tb_otchestvo.Size = new System.Drawing.Size(112, 20);
+            this.tb_otchestvo.TabIndex = 2;
+            // 
+            // lbl_otchestvo
+            // 
+            this.lbl_otchestvo.AutoSize = true;
+            this.lbl_otchestvo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_otchestvo.Location = new System.Drawing.Point(0, 0);
+            this.lbl_otchestvo.Name = "lbl_otchestvo";
+            this.lbl_otchestvo.Size = new System.Drawing.Size(98, 13);
+            this.lbl_otchestvo.TabIndex = 1;
+            this.lbl_otchestvo.Text = "Отчество клиента";
+            // 
+            // pn_first_name_identification
+            // 
+            this.pn_first_name_identification.Controls.Add(this.tb_identification_number);
+            this.pn_first_name_identification.Controls.Add(this.lbl_identification_number);
+            this.pn_first_name_identification.Controls.Add(this.tb_first_name);
+            this.pn_first_name_identification.Controls.Add(this.lbl_first_name);
+            this.pn_first_name_identification.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pn_first_name_identification.Location = new System.Drawing.Point(132, 16);
+            this.pn_first_name_identification.Name = "pn_first_name_identification";
+            this.pn_first_name_identification.Size = new System.Drawing.Size(156, 71);
+            this.pn_first_name_identification.TabIndex = 6;
             // 
             // tb_identification_number
             // 
@@ -273,25 +227,71 @@
             this.lbl_identification_number.TabIndex = 3;
             this.lbl_identification_number.Text = "Идентификационный номер";
             // 
-            // btn_reg_car
+            // tb_first_name
             // 
-            this.btn_reg_car.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btn_reg_car.Location = new System.Drawing.Point(0, 33);
-            this.btn_reg_car.Name = "btn_reg_car";
-            this.btn_reg_car.Size = new System.Drawing.Size(112, 38);
-            this.btn_reg_car.TabIndex = 3;
-            this.btn_reg_car.Text = "Регистрация автомобиля";
-            this.btn_reg_car.UseVisualStyleBackColor = true;
+            this.tb_first_name.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tb_first_name.Location = new System.Drawing.Point(0, 13);
+            this.tb_first_name.Name = "tb_first_name";
+            this.tb_first_name.Size = new System.Drawing.Size(156, 20);
+            this.tb_first_name.TabIndex = 2;
             // 
-            // btn_identification_client
+            // lbl_first_name
             // 
-            this.btn_identification_client.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_identification_client.Location = new System.Drawing.Point(9, 0);
-            this.btn_identification_client.Name = "btn_identification_client";
-            this.btn_identification_client.Size = new System.Drawing.Size(125, 71);
-            this.btn_identification_client.TabIndex = 0;
-            this.btn_identification_client.Text = "Идентификация клиента";
-            this.btn_identification_client.UseVisualStyleBackColor = true;
+            this.lbl_first_name.AutoSize = true;
+            this.lbl_first_name.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_first_name.Location = new System.Drawing.Point(0, 0);
+            this.lbl_first_name.Name = "lbl_first_name";
+            this.lbl_first_name.Size = new System.Drawing.Size(73, 13);
+            this.lbl_first_name.TabIndex = 1;
+            this.lbl_first_name.Text = "Имя клиента";
+            // 
+            // pn_second_name_register
+            // 
+            this.pn_second_name_register.Controls.Add(this.tb_register_sign);
+            this.pn_second_name_register.Controls.Add(this.lbl_register_sign);
+            this.pn_second_name_register.Controls.Add(this.tb_second_name_client);
+            this.pn_second_name_register.Controls.Add(this.lbl_second_name);
+            this.pn_second_name_register.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pn_second_name_register.Location = new System.Drawing.Point(3, 16);
+            this.pn_second_name_register.Name = "pn_second_name_register";
+            this.pn_second_name_register.Size = new System.Drawing.Size(129, 71);
+            this.pn_second_name_register.TabIndex = 4;
+            // 
+            // tb_register_sign
+            // 
+            this.tb_register_sign.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tb_register_sign.Location = new System.Drawing.Point(0, 46);
+            this.tb_register_sign.Name = "tb_register_sign";
+            this.tb_register_sign.Size = new System.Drawing.Size(129, 20);
+            this.tb_register_sign.TabIndex = 4;
+            // 
+            // lbl_register_sign
+            // 
+            this.lbl_register_sign.AutoSize = true;
+            this.lbl_register_sign.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_register_sign.Location = new System.Drawing.Point(0, 33);
+            this.lbl_register_sign.Name = "lbl_register_sign";
+            this.lbl_register_sign.Size = new System.Drawing.Size(125, 13);
+            this.lbl_register_sign.TabIndex = 3;
+            this.lbl_register_sign.Text = "Регистрационный знак";
+            // 
+            // tb_second_name_client
+            // 
+            this.tb_second_name_client.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tb_second_name_client.Location = new System.Drawing.Point(0, 13);
+            this.tb_second_name_client.Name = "tb_second_name_client";
+            this.tb_second_name_client.Size = new System.Drawing.Size(129, 20);
+            this.tb_second_name_client.TabIndex = 2;
+            // 
+            // lbl_second_name
+            // 
+            this.lbl_second_name.AutoSize = true;
+            this.lbl_second_name.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbl_second_name.Location = new System.Drawing.Point(0, 0);
+            this.lbl_second_name.Name = "lbl_second_name";
+            this.lbl_second_name.Size = new System.Drawing.Size(100, 13);
+            this.lbl_second_name.TabIndex = 1;
+            this.lbl_second_name.Text = "Фамилия клиента";
             // 
             // tb_search_order
             // 
@@ -320,16 +320,6 @@
             this.pn_docs.Size = new System.Drawing.Size(262, 90);
             this.pn_docs.TabIndex = 7;
             // 
-            // btn_check
-            // 
-            this.btn_check.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_check.Location = new System.Drawing.Point(0, 0);
-            this.btn_check.Name = "btn_check";
-            this.btn_check.Size = new System.Drawing.Size(108, 90);
-            this.btn_check.TabIndex = 4;
-            this.btn_check.Text = "Формирование кассового чека";
-            this.btn_check.UseVisualStyleBackColor = true;
-            // 
             // btn_act
             // 
             this.btn_act.Dock = System.Windows.Forms.DockStyle.Right;
@@ -339,6 +329,16 @@
             this.btn_act.TabIndex = 5;
             this.btn_act.Text = "Формирование акта о выполненных услугах";
             this.btn_act.UseVisualStyleBackColor = true;
+            // 
+            // btn_check
+            // 
+            this.btn_check.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btn_check.Location = new System.Drawing.Point(0, 0);
+            this.btn_check.Name = "btn_check";
+            this.btn_check.Size = new System.Drawing.Size(108, 90);
+            this.btn_check.TabIndex = 4;
+            this.btn_check.Text = "Формирование кассового чека";
+            this.btn_check.UseVisualStyleBackColor = true;
             // 
             // pn_docs_price
             // 
@@ -371,6 +371,16 @@
             this.pn_post_summ_take.Name = "pn_post_summ_take";
             this.pn_post_summ_take.Size = new System.Drawing.Size(92, 90);
             this.pn_post_summ_take.TabIndex = 11;
+            // 
+            // btn_take_order
+            // 
+            this.btn_take_order.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_take_order.Location = new System.Drawing.Point(0, 59);
+            this.btn_take_order.Name = "btn_take_order";
+            this.btn_take_order.Size = new System.Drawing.Size(92, 31);
+            this.btn_take_order.TabIndex = 37;
+            this.btn_take_order.Text = "Принять заказ";
+            this.btn_take_order.UseVisualStyleBackColor = true;
             // 
             // tb_post_summ
             // 
@@ -476,16 +486,6 @@
             this.btn_errors.Text = "Ошибки";
             this.btn_errors.UseVisualStyleBackColor = true;
             // 
-            // btn_take_order
-            // 
-            this.btn_take_order.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_take_order.Location = new System.Drawing.Point(0, 59);
-            this.btn_take_order.Name = "btn_take_order";
-            this.btn_take_order.Size = new System.Drawing.Size(92, 31);
-            this.btn_take_order.TabIndex = 37;
-            this.btn_take_order.Text = "Принять заказ";
-            this.btn_take_order.UseVisualStyleBackColor = true;
-            // 
             // CreateOrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -499,15 +499,15 @@
             this.Name = "CreateOrderForm";
             this.Text = "Составление заказа";
             this.gb_client_car.ResumeLayout(false);
-            this.pn_second_name_register.ResumeLayout(false);
-            this.pn_second_name_register.PerformLayout();
-            this.pn_first_name_identification.ResumeLayout(false);
-            this.pn_first_name_identification.PerformLayout();
-            this.pn_patronymic_reg_car.ResumeLayout(false);
-            this.pn_patronymic_reg_car.PerformLayout();
+            this.pn_indetification_registration.ResumeLayout(false);
             this.pn_phone_number.ResumeLayout(false);
             this.pn_phone_number.PerformLayout();
-            this.pn_indetification_registration.ResumeLayout(false);
+            this.pn_patronymic_reg_car.ResumeLayout(false);
+            this.pn_patronymic_reg_car.PerformLayout();
+            this.pn_first_name_identification.ResumeLayout(false);
+            this.pn_first_name_identification.PerformLayout();
+            this.pn_second_name_register.ResumeLayout(false);
+            this.pn_second_name_register.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_orders)).EndInit();
             this.pn_docs.ResumeLayout(false);
             this.pn_docs_price.ResumeLayout(false);
