@@ -51,7 +51,7 @@
             this.btn_delete = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_insert = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.dgvClients = new System.Windows.Forms.DataGridView();
             this.pn_cancel.SuspendLayout();
             this.gb_search_filtration.SuspendLayout();
             this.pn_second_name.SuspendLayout();
@@ -60,14 +60,16 @@
             this.pn_phone_number.SuspendLayout();
             this.gb_manipulation.SuspendLayout();
             this.pn_manipulation.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClients)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_errors
             // 
             this.btn_errors.Dock = System.Windows.Forms.DockStyle.Left;
             this.btn_errors.Location = new System.Drawing.Point(0, 0);
+            this.btn_errors.Margin = new System.Windows.Forms.Padding(4);
             this.btn_errors.Name = "btn_errors";
-            this.btn_errors.Size = new System.Drawing.Size(166, 25);
+            this.btn_errors.Size = new System.Drawing.Size(221, 31);
             this.btn_errors.TabIndex = 35;
             this.btn_errors.Text = "Ошибки";
             this.btn_errors.UseVisualStyleBackColor = true;
@@ -77,17 +79,19 @@
             this.pn_cancel.Controls.Add(this.btn_cancel);
             this.pn_cancel.Controls.Add(this.btn_errors);
             this.pn_cancel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pn_cancel.Location = new System.Drawing.Point(0, 354);
+            this.pn_cancel.Location = new System.Drawing.Point(0, 435);
+            this.pn_cancel.Margin = new System.Windows.Forms.Padding(4);
             this.pn_cancel.Name = "pn_cancel";
-            this.pn_cancel.Size = new System.Drawing.Size(800, 25);
+            this.pn_cancel.Size = new System.Drawing.Size(1067, 31);
             this.pn_cancel.TabIndex = 39;
             // 
             // btn_cancel
             // 
             this.btn_cancel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_cancel.Location = new System.Drawing.Point(634, 0);
+            this.btn_cancel.Location = new System.Drawing.Point(846, 0);
+            this.btn_cancel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(166, 25);
+            this.btn_cancel.Size = new System.Drawing.Size(221, 31);
             this.btn_cancel.TabIndex = 36;
             this.btn_cancel.Text = "Закрыть";
             this.btn_cancel.UseVisualStyleBackColor = true;
@@ -96,9 +100,10 @@
             // 
             this.chb_filtration.AutoSize = true;
             this.chb_filtration.Dock = System.Windows.Forms.DockStyle.Top;
-            this.chb_filtration.Location = new System.Drawing.Point(687, 16);
+            this.chb_filtration.Location = new System.Drawing.Point(915, 19);
+            this.chb_filtration.Margin = new System.Windows.Forms.Padding(4);
             this.chb_filtration.Name = "chb_filtration";
-            this.chb_filtration.Size = new System.Drawing.Size(110, 17);
+            this.chb_filtration.Size = new System.Drawing.Size(148, 21);
             this.chb_filtration.TabIndex = 1;
             this.chb_filtration.Text = "Отфильтровать";
             this.chb_filtration.UseVisualStyleBackColor = true;
@@ -106,9 +111,10 @@
             // tb_search_filtration
             // 
             this.tb_search_filtration.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tb_search_filtration.Location = new System.Drawing.Point(3, 16);
+            this.tb_search_filtration.Location = new System.Drawing.Point(4, 19);
+            this.tb_search_filtration.Margin = new System.Windows.Forms.Padding(4);
             this.tb_search_filtration.Name = "tb_search_filtration";
-            this.tb_search_filtration.Size = new System.Drawing.Size(684, 20);
+            this.tb_search_filtration.Size = new System.Drawing.Size(911, 22);
             this.tb_search_filtration.TabIndex = 0;
             // 
             // gb_search_filtration
@@ -117,8 +123,10 @@
             this.gb_search_filtration.Controls.Add(this.tb_search_filtration);
             this.gb_search_filtration.Dock = System.Windows.Forms.DockStyle.Top;
             this.gb_search_filtration.Location = new System.Drawing.Point(0, 0);
+            this.gb_search_filtration.Margin = new System.Windows.Forms.Padding(4);
             this.gb_search_filtration.Name = "gb_search_filtration";
-            this.gb_search_filtration.Size = new System.Drawing.Size(800, 38);
+            this.gb_search_filtration.Padding = new System.Windows.Forms.Padding(4);
+            this.gb_search_filtration.Size = new System.Drawing.Size(1067, 47);
             this.gb_search_filtration.TabIndex = 36;
             this.gb_search_filtration.TabStop = false;
             this.gb_search_filtration.Text = "Поиск и фильтрация";
@@ -128,17 +136,19 @@
             this.pn_second_name.Controls.Add(this.tb_second_name);
             this.pn_second_name.Controls.Add(this.lbl_second_name);
             this.pn_second_name.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pn_second_name.Location = new System.Drawing.Point(3, 16);
+            this.pn_second_name.Location = new System.Drawing.Point(4, 19);
+            this.pn_second_name.Margin = new System.Windows.Forms.Padding(4);
             this.pn_second_name.Name = "pn_second_name";
-            this.pn_second_name.Size = new System.Drawing.Size(202, 33);
+            this.pn_second_name.Size = new System.Drawing.Size(269, 41);
             this.pn_second_name.TabIndex = 40;
             // 
             // tb_second_name
             // 
             this.tb_second_name.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tb_second_name.Location = new System.Drawing.Point(0, 13);
+            this.tb_second_name.Location = new System.Drawing.Point(0, 17);
+            this.tb_second_name.Margin = new System.Windows.Forms.Padding(4);
             this.tb_second_name.Name = "tb_second_name";
-            this.tb_second_name.Size = new System.Drawing.Size(202, 20);
+            this.tb_second_name.Size = new System.Drawing.Size(269, 22);
             this.tb_second_name.TabIndex = 28;
             // 
             // lbl_second_name
@@ -146,8 +156,9 @@
             this.lbl_second_name.AutoSize = true;
             this.lbl_second_name.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_second_name.Location = new System.Drawing.Point(0, 0);
+            this.lbl_second_name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_second_name.Name = "lbl_second_name";
-            this.lbl_second_name.Size = new System.Drawing.Size(100, 13);
+            this.lbl_second_name.Size = new System.Drawing.Size(128, 17);
             this.lbl_second_name.TabIndex = 27;
             this.lbl_second_name.Text = "Фамилия клиента";
             // 
@@ -156,17 +167,19 @@
             this.pn_first_name.Controls.Add(this.tb_first_name);
             this.pn_first_name.Controls.Add(this.lbl_first_name);
             this.pn_first_name.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pn_first_name.Location = new System.Drawing.Point(205, 16);
+            this.pn_first_name.Location = new System.Drawing.Point(273, 19);
+            this.pn_first_name.Margin = new System.Windows.Forms.Padding(4);
             this.pn_first_name.Name = "pn_first_name";
-            this.pn_first_name.Size = new System.Drawing.Size(202, 33);
+            this.pn_first_name.Size = new System.Drawing.Size(269, 41);
             this.pn_first_name.TabIndex = 41;
             // 
             // tb_first_name
             // 
             this.tb_first_name.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tb_first_name.Location = new System.Drawing.Point(0, 13);
+            this.tb_first_name.Location = new System.Drawing.Point(0, 17);
+            this.tb_first_name.Margin = new System.Windows.Forms.Padding(4);
             this.tb_first_name.Name = "tb_first_name";
-            this.tb_first_name.Size = new System.Drawing.Size(202, 20);
+            this.tb_first_name.Size = new System.Drawing.Size(269, 22);
             this.tb_first_name.TabIndex = 28;
             // 
             // lbl_first_name
@@ -174,8 +187,9 @@
             this.lbl_first_name.AutoSize = true;
             this.lbl_first_name.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_first_name.Location = new System.Drawing.Point(0, 0);
+            this.lbl_first_name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_first_name.Name = "lbl_first_name";
-            this.lbl_first_name.Size = new System.Drawing.Size(73, 13);
+            this.lbl_first_name.Size = new System.Drawing.Size(93, 17);
             this.lbl_first_name.TabIndex = 27;
             this.lbl_first_name.Text = "Имя клиента";
             // 
@@ -184,17 +198,19 @@
             this.pn_patronynic.Controls.Add(this.tb_patronynic);
             this.pn_patronynic.Controls.Add(this.lbl_patronynic);
             this.pn_patronynic.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pn_patronynic.Location = new System.Drawing.Point(407, 16);
+            this.pn_patronynic.Location = new System.Drawing.Point(542, 19);
+            this.pn_patronynic.Margin = new System.Windows.Forms.Padding(4);
             this.pn_patronynic.Name = "pn_patronynic";
-            this.pn_patronynic.Size = new System.Drawing.Size(202, 33);
+            this.pn_patronynic.Size = new System.Drawing.Size(269, 41);
             this.pn_patronynic.TabIndex = 42;
             // 
             // tb_patronynic
             // 
             this.tb_patronynic.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tb_patronynic.Location = new System.Drawing.Point(0, 13);
+            this.tb_patronynic.Location = new System.Drawing.Point(0, 17);
+            this.tb_patronynic.Margin = new System.Windows.Forms.Padding(4);
             this.tb_patronynic.Name = "tb_patronynic";
-            this.tb_patronynic.Size = new System.Drawing.Size(202, 20);
+            this.tb_patronynic.Size = new System.Drawing.Size(269, 22);
             this.tb_patronynic.TabIndex = 28;
             // 
             // lbl_patronynic
@@ -202,8 +218,9 @@
             this.lbl_patronynic.AutoSize = true;
             this.lbl_patronynic.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_patronynic.Location = new System.Drawing.Point(0, 0);
+            this.lbl_patronynic.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_patronynic.Name = "lbl_patronynic";
-            this.lbl_patronynic.Size = new System.Drawing.Size(98, 13);
+            this.lbl_patronynic.Size = new System.Drawing.Size(129, 17);
             this.lbl_patronynic.TabIndex = 27;
             this.lbl_patronynic.Text = "Отчество клиента";
             // 
@@ -212,17 +229,19 @@
             this.pn_phone_number.Controls.Add(this.tb_phone_number);
             this.pn_phone_number.Controls.Add(this.lbl_phone_number);
             this.pn_phone_number.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pn_phone_number.Location = new System.Drawing.Point(609, 16);
+            this.pn_phone_number.Location = new System.Drawing.Point(811, 19);
+            this.pn_phone_number.Margin = new System.Windows.Forms.Padding(4);
             this.pn_phone_number.Name = "pn_phone_number";
-            this.pn_phone_number.Size = new System.Drawing.Size(191, 33);
+            this.pn_phone_number.Size = new System.Drawing.Size(255, 41);
             this.pn_phone_number.TabIndex = 43;
             // 
             // tb_phone_number
             // 
             this.tb_phone_number.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tb_phone_number.Location = new System.Drawing.Point(0, 13);
+            this.tb_phone_number.Location = new System.Drawing.Point(0, 17);
+            this.tb_phone_number.Margin = new System.Windows.Forms.Padding(4);
             this.tb_phone_number.Name = "tb_phone_number";
-            this.tb_phone_number.Size = new System.Drawing.Size(191, 20);
+            this.tb_phone_number.Size = new System.Drawing.Size(255, 22);
             this.tb_phone_number.TabIndex = 30;
             // 
             // lbl_phone_number
@@ -230,8 +249,9 @@
             this.lbl_phone_number.AutoSize = true;
             this.lbl_phone_number.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_phone_number.Location = new System.Drawing.Point(0, 0);
+            this.lbl_phone_number.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_phone_number.Name = "lbl_phone_number";
-            this.lbl_phone_number.Size = new System.Drawing.Size(137, 13);
+            this.lbl_phone_number.Size = new System.Drawing.Size(179, 17);
             this.lbl_phone_number.TabIndex = 29;
             this.lbl_phone_number.Text = "Номер телефона клиента";
             // 
@@ -242,9 +262,11 @@
             this.gb_manipulation.Controls.Add(this.pn_first_name);
             this.gb_manipulation.Controls.Add(this.pn_second_name);
             this.gb_manipulation.Controls.Add(this.pn_manipulation);
-            this.gb_manipulation.Location = new System.Drawing.Point(0, 276);
+            this.gb_manipulation.Location = new System.Drawing.Point(0, 340);
+            this.gb_manipulation.Margin = new System.Windows.Forms.Padding(4);
             this.gb_manipulation.Name = "gb_manipulation";
-            this.gb_manipulation.Size = new System.Drawing.Size(800, 78);
+            this.gb_manipulation.Padding = new System.Windows.Forms.Padding(4);
+            this.gb_manipulation.Size = new System.Drawing.Size(1067, 96);
             this.gb_manipulation.TabIndex = 38;
             this.gb_manipulation.TabStop = false;
             this.gb_manipulation.Text = "Манипуляция данными";
@@ -255,17 +277,19 @@
             this.pn_manipulation.Controls.Add(this.btn_update);
             this.pn_manipulation.Controls.Add(this.btn_insert);
             this.pn_manipulation.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pn_manipulation.Location = new System.Drawing.Point(3, 49);
+            this.pn_manipulation.Location = new System.Drawing.Point(4, 60);
+            this.pn_manipulation.Margin = new System.Windows.Forms.Padding(4);
             this.pn_manipulation.Name = "pn_manipulation";
-            this.pn_manipulation.Size = new System.Drawing.Size(794, 26);
+            this.pn_manipulation.Size = new System.Drawing.Size(1059, 32);
             this.pn_manipulation.TabIndex = 39;
             // 
             // btn_delete
             // 
             this.btn_delete.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_delete.Location = new System.Drawing.Point(530, 0);
+            this.btn_delete.Location = new System.Drawing.Point(706, 0);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(4);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(267, 26);
+            this.btn_delete.Size = new System.Drawing.Size(356, 32);
             this.btn_delete.TabIndex = 34;
             this.btn_delete.Text = "Удалить данные клиента";
             this.btn_delete.UseVisualStyleBackColor = true;
@@ -273,9 +297,10 @@
             // btn_update
             // 
             this.btn_update.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_update.Location = new System.Drawing.Point(265, 0);
+            this.btn_update.Location = new System.Drawing.Point(353, 0);
+            this.btn_update.Margin = new System.Windows.Forms.Padding(4);
             this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(265, 26);
+            this.btn_update.Size = new System.Drawing.Size(353, 32);
             this.btn_update.TabIndex = 33;
             this.btn_update.Text = "Изменить данные клиента";
             this.btn_update.UseVisualStyleBackColor = true;
@@ -284,30 +309,37 @@
             // 
             this.btn_insert.Dock = System.Windows.Forms.DockStyle.Left;
             this.btn_insert.Location = new System.Drawing.Point(0, 0);
+            this.btn_insert.Margin = new System.Windows.Forms.Padding(4);
             this.btn_insert.Name = "btn_insert";
-            this.btn_insert.Size = new System.Drawing.Size(265, 26);
+            this.btn_insert.Size = new System.Drawing.Size(353, 32);
             this.btn_insert.TabIndex = 32;
             this.btn_insert.Text = "Добавить данные клиента";
             this.btn_insert.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // dgvClients
             // 
-            this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(0, 38);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(800, 316);
-            this.listBox1.TabIndex = 40;
+            this.dgvClients.AllowUserToAddRows = false;
+            this.dgvClients.AllowUserToDeleteRows = false;
+            this.dgvClients.BackgroundColor = System.Drawing.Color.White;
+            this.dgvClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClients.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvClients.Location = new System.Drawing.Point(0, 0);
+            this.dgvClients.Name = "dgvClients";
+            this.dgvClients.ReadOnly = true;
+            this.dgvClients.RowTemplate.Height = 24;
+            this.dgvClients.Size = new System.Drawing.Size(1067, 466);
+            this.dgvClients.TabIndex = 40;
             // 
             // ClientsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 379);
+            this.ClientSize = new System.Drawing.Size(1067, 466);
             this.Controls.Add(this.gb_manipulation);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.pn_cancel);
             this.Controls.Add(this.gb_search_filtration);
+            this.Controls.Add(this.dgvClients);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ClientsForm";
             this.Text = "Справочник Клиенты";
             this.pn_cancel.ResumeLayout(false);
@@ -323,6 +355,7 @@
             this.pn_phone_number.PerformLayout();
             this.gb_manipulation.ResumeLayout(false);
             this.pn_manipulation.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClients)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -352,6 +385,6 @@
         private System.Windows.Forms.Button btn_delete;
         private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Button btn_insert;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.DataGridView dgvClients;
     }
 }
