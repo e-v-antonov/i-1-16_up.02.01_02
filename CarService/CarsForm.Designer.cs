@@ -3,14 +3,14 @@
     partial class CarsForm
     {
         /// <summary>
-        /// Обязательная переменная конструктора.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Освободить все используемые ресурсы.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,17 +20,21 @@
             base.Dispose(disposing);
         }
 
-        #region Код, автоматически созданный конструктором форм Windows
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Требуемый метод для поддержки конструктора — не изменяйте 
-        /// содержимое этого метода с помощью редактора кода.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.gbSearchFiltration = new System.Windows.Forms.GroupBox();
+            this.lbCars = new System.Windows.Forms.ListBox();
             this.chbFiltration = new System.Windows.Forms.CheckBox();
             this.tbSearchFiltration = new System.Windows.Forms.TextBox();
+            this.gbSearchFiltration = new System.Windows.Forms.GroupBox();
+            this.pnCancel = new System.Windows.Forms.Panel();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnErrors = new System.Windows.Forms.Button();
             this.gbManipulation = new System.Windows.Forms.GroupBox();
             this.pnClientFormKlients = new System.Windows.Forms.Panel();
             this.btnFromClients = new System.Windows.Forms.Button();
@@ -55,31 +59,24 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnInsert = new System.Windows.Forms.Button();
-            this.pnCancel = new System.Windows.Forms.Panel();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnErrors = new System.Windows.Forms.Button();
-            this.lbCars = new System.Windows.Forms.ListBox();
             this.gbSearchFiltration.SuspendLayout();
+            this.pnCancel.SuspendLayout();
             this.gbManipulation.SuspendLayout();
             this.pnClientFormKlients.SuspendLayout();
             this.pnColorYearMade.SuspendLayout();
             this.pnBrandModel.SuspendLayout();
             this.pnRegVim.SuspendLayout();
             this.pnManipulation.SuspendLayout();
-            this.pnCancel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gbSearchFiltration
+            // lbCars
             // 
-            this.gbSearchFiltration.Controls.Add(this.chbFiltration);
-            this.gbSearchFiltration.Controls.Add(this.tbSearchFiltration);
-            this.gbSearchFiltration.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gbSearchFiltration.Location = new System.Drawing.Point(0, 0);
-            this.gbSearchFiltration.Name = "gbSearchFiltration";
-            this.gbSearchFiltration.Size = new System.Drawing.Size(625, 38);
-            this.gbSearchFiltration.TabIndex = 0;
-            this.gbSearchFiltration.TabStop = false;
-            this.gbSearchFiltration.Text = "Поиск и фильтрация";
+            this.lbCars.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbCars.FormattingEnabled = true;
+            this.lbCars.Location = new System.Drawing.Point(0, 38);
+            this.lbCars.Name = "lbCars";
+            this.lbCars.Size = new System.Drawing.Size(625, 408);
+            this.lbCars.TabIndex = 48;
             // 
             // chbFiltration
             // 
@@ -100,6 +97,48 @@
             this.tbSearchFiltration.Size = new System.Drawing.Size(511, 20);
             this.tbSearchFiltration.TabIndex = 0;
             // 
+            // gbSearchFiltration
+            // 
+            this.gbSearchFiltration.Controls.Add(this.chbFiltration);
+            this.gbSearchFiltration.Controls.Add(this.tbSearchFiltration);
+            this.gbSearchFiltration.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gbSearchFiltration.Location = new System.Drawing.Point(0, 0);
+            this.gbSearchFiltration.Name = "gbSearchFiltration";
+            this.gbSearchFiltration.Size = new System.Drawing.Size(625, 38);
+            this.gbSearchFiltration.TabIndex = 45;
+            this.gbSearchFiltration.TabStop = false;
+            this.gbSearchFiltration.Text = "Поиск и фильтрация";
+            // 
+            // pnCancel
+            // 
+            this.pnCancel.Controls.Add(this.btnCancel);
+            this.pnCancel.Controls.Add(this.btnErrors);
+            this.pnCancel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnCancel.Location = new System.Drawing.Point(0, 421);
+            this.pnCancel.Name = "pnCancel";
+            this.pnCancel.Size = new System.Drawing.Size(625, 25);
+            this.pnCancel.TabIndex = 49;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnCancel.Location = new System.Drawing.Point(459, 0);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(166, 25);
+            this.btnCancel.TabIndex = 36;
+            this.btnCancel.Text = "Закрыть";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            // 
+            // btnErrors
+            // 
+            this.btnErrors.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnErrors.Location = new System.Drawing.Point(0, 0);
+            this.btnErrors.Name = "btnErrors";
+            this.btnErrors.Size = new System.Drawing.Size(166, 25);
+            this.btnErrors.TabIndex = 35;
+            this.btnErrors.Text = "Ошибки";
+            this.btnErrors.UseVisualStyleBackColor = true;
+            // 
             // gbManipulation
             // 
             this.gbManipulation.Controls.Add(this.pnClientFormKlients);
@@ -108,10 +147,10 @@
             this.gbManipulation.Controls.Add(this.pnRegVim);
             this.gbManipulation.Controls.Add(this.pnManipulation);
             this.gbManipulation.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gbManipulation.Location = new System.Drawing.Point(0, 333);
+            this.gbManipulation.Location = new System.Drawing.Point(0, 308);
             this.gbManipulation.Name = "gbManipulation";
             this.gbManipulation.Size = new System.Drawing.Size(625, 113);
-            this.gbManipulation.TabIndex = 2;
+            this.gbManipulation.TabIndex = 50;
             this.gbManipulation.TabStop = false;
             this.gbManipulation.Text = "Манипуляция данными";
             // 
@@ -340,58 +379,20 @@
             this.btnInsert.Text = "Добавить данные автомобиля";
             this.btnInsert.UseVisualStyleBackColor = true;
             // 
-            // pnCancel
-            // 
-            this.pnCancel.Controls.Add(this.btnCancel);
-            this.pnCancel.Controls.Add(this.btnErrors);
-            this.pnCancel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnCancel.Location = new System.Drawing.Point(0, 308);
-            this.pnCancel.Name = "pnCancel";
-            this.pnCancel.Size = new System.Drawing.Size(625, 25);
-            this.pnCancel.TabIndex = 35;
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnCancel.Location = new System.Drawing.Point(459, 0);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(166, 25);
-            this.btnCancel.TabIndex = 36;
-            this.btnCancel.Text = "Закрыть";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            // 
-            // btnErrors
-            // 
-            this.btnErrors.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnErrors.Location = new System.Drawing.Point(0, 0);
-            this.btnErrors.Name = "btnErrors";
-            this.btnErrors.Size = new System.Drawing.Size(166, 25);
-            this.btnErrors.TabIndex = 35;
-            this.btnErrors.Text = "Ошибки";
-            this.btnErrors.UseVisualStyleBackColor = true;
-            // 
-            // lbCars
-            // 
-            this.lbCars.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbCars.FormattingEnabled = true;
-            this.lbCars.Location = new System.Drawing.Point(0, 38);
-            this.lbCars.Name = "lbCars";
-            this.lbCars.Size = new System.Drawing.Size(625, 270);
-            this.lbCars.TabIndex = 44;
-            // 
-            // CarsForm
+            // CarsForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(625, 446);
-            this.Controls.Add(this.lbCars);
-            this.Controls.Add(this.pnCancel);
             this.Controls.Add(this.gbManipulation);
+            this.Controls.Add(this.pnCancel);
+            this.Controls.Add(this.lbCars);
             this.Controls.Add(this.gbSearchFiltration);
-            this.Name = "CarsForm";
+            this.Name = "CarsForm1";
             this.Text = "Справочник Автомобили";
             this.gbSearchFiltration.ResumeLayout(false);
             this.gbSearchFiltration.PerformLayout();
+            this.pnCancel.ResumeLayout(false);
             this.gbManipulation.ResumeLayout(false);
             this.pnClientFormKlients.ResumeLayout(false);
             this.pnClientFormKlients.PerformLayout();
@@ -402,16 +403,19 @@
             this.pnRegVim.ResumeLayout(false);
             this.pnRegVim.PerformLayout();
             this.pnManipulation.ResumeLayout(false);
-            this.pnCancel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox gbSearchFiltration;
+        private System.Windows.Forms.ListBox lbCars;
         private System.Windows.Forms.CheckBox chbFiltration;
         private System.Windows.Forms.TextBox tbSearchFiltration;
+        private System.Windows.Forms.GroupBox gbSearchFiltration;
+        private System.Windows.Forms.Panel pnCancel;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnErrors;
         private System.Windows.Forms.GroupBox gbManipulation;
         private System.Windows.Forms.Panel pnClientFormKlients;
         private System.Windows.Forms.Button btnFromClients;
@@ -436,10 +440,5 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnInsert;
-        private System.Windows.Forms.Panel pnCancel;
-        private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btnErrors;
-        private System.Windows.Forms.ListBox lbCars;
     }
 }
-
