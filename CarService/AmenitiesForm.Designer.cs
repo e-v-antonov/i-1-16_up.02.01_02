@@ -59,9 +59,9 @@
             this.gb_search_filtration.Controls.Add(this.tb_search_filtration);
             this.gb_search_filtration.Dock = System.Windows.Forms.DockStyle.Top;
             this.gb_search_filtration.Location = new System.Drawing.Point(0, 0);
-            this.gb_search_filtration.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gb_search_filtration.Margin = new System.Windows.Forms.Padding(4);
             this.gb_search_filtration.Name = "gb_search_filtration";
-            this.gb_search_filtration.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gb_search_filtration.Padding = new System.Windows.Forms.Padding(4);
             this.gb_search_filtration.Size = new System.Drawing.Size(400, 47);
             this.gb_search_filtration.TabIndex = 37;
             this.gb_search_filtration.TabStop = false;
@@ -72,7 +72,7 @@
             this.chb_filtration.AutoSize = true;
             this.chb_filtration.Dock = System.Windows.Forms.DockStyle.Top;
             this.chb_filtration.Location = new System.Drawing.Point(252, 19);
-            this.chb_filtration.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chb_filtration.Margin = new System.Windows.Forms.Padding(4);
             this.chb_filtration.Name = "chb_filtration";
             this.chb_filtration.Size = new System.Drawing.Size(144, 21);
             this.chb_filtration.TabIndex = 1;
@@ -83,7 +83,7 @@
             // 
             this.tb_search_filtration.Dock = System.Windows.Forms.DockStyle.Left;
             this.tb_search_filtration.Location = new System.Drawing.Point(4, 19);
-            this.tb_search_filtration.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_search_filtration.Margin = new System.Windows.Forms.Padding(4);
             this.tb_search_filtration.Name = "tb_search_filtration";
             this.tb_search_filtration.Size = new System.Drawing.Size(248, 22);
             this.tb_search_filtration.TabIndex = 0;
@@ -94,7 +94,7 @@
             this.pn_cancel.Controls.Add(this.btn_errors);
             this.pn_cancel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pn_cancel.Location = new System.Drawing.Point(0, 539);
-            this.pn_cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pn_cancel.Margin = new System.Windows.Forms.Padding(4);
             this.pn_cancel.Name = "pn_cancel";
             this.pn_cancel.Size = new System.Drawing.Size(400, 31);
             this.pn_cancel.TabIndex = 41;
@@ -103,7 +103,7 @@
             // 
             this.btn_cancel.Dock = System.Windows.Forms.DockStyle.Right;
             this.btn_cancel.Location = new System.Drawing.Point(304, 0);
-            this.btn_cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_cancel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(96, 31);
             this.btn_cancel.TabIndex = 36;
@@ -114,7 +114,7 @@
             // 
             this.btn_errors.Dock = System.Windows.Forms.DockStyle.Left;
             this.btn_errors.Location = new System.Drawing.Point(0, 0);
-            this.btn_errors.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_errors.Margin = new System.Windows.Forms.Padding(4);
             this.btn_errors.Name = "btn_errors";
             this.btn_errors.Size = new System.Drawing.Size(89, 31);
             this.btn_errors.TabIndex = 35;
@@ -127,9 +127,9 @@
             this.gb_manipulation.Controls.Add(this.pn_service_data);
             this.gb_manipulation.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.gb_manipulation.Location = new System.Drawing.Point(0, 337);
-            this.gb_manipulation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gb_manipulation.Margin = new System.Windows.Forms.Padding(4);
             this.gb_manipulation.Name = "gb_manipulation";
-            this.gb_manipulation.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gb_manipulation.Padding = new System.Windows.Forms.Padding(4);
             this.gb_manipulation.Size = new System.Drawing.Size(400, 202);
             this.gb_manipulation.TabIndex = 42;
             this.gb_manipulation.TabStop = false;
@@ -142,7 +142,7 @@
             this.pn_manipulation.Controls.Add(this.btn_insert);
             this.pn_manipulation.Dock = System.Windows.Forms.DockStyle.Top;
             this.pn_manipulation.Location = new System.Drawing.Point(4, 101);
-            this.pn_manipulation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pn_manipulation.Margin = new System.Windows.Forms.Padding(4);
             this.pn_manipulation.Name = "pn_manipulation";
             this.pn_manipulation.Size = new System.Drawing.Size(392, 96);
             this.pn_manipulation.TabIndex = 42;
@@ -151,7 +151,7 @@
             // 
             this.btn_delete.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_delete.Location = new System.Drawing.Point(0, 64);
-            this.btn_delete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(4);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(392, 32);
             this.btn_delete.TabIndex = 34;
@@ -162,7 +162,7 @@
             // 
             this.btn_update.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_update.Location = new System.Drawing.Point(0, 32);
-            this.btn_update.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_update.Margin = new System.Windows.Forms.Padding(4);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(392, 32);
             this.btn_update.TabIndex = 33;
@@ -173,7 +173,7 @@
             // 
             this.btn_insert.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_insert.Location = new System.Drawing.Point(0, 0);
-            this.btn_insert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_insert.Margin = new System.Windows.Forms.Padding(4);
             this.btn_insert.Name = "btn_insert";
             this.btn_insert.Size = new System.Drawing.Size(392, 32);
             this.btn_insert.TabIndex = 32;
@@ -188,7 +188,7 @@
             this.pn_service_data.Controls.Add(this.lbl_name_service);
             this.pn_service_data.Dock = System.Windows.Forms.DockStyle.Top;
             this.pn_service_data.Location = new System.Drawing.Point(4, 19);
-            this.pn_service_data.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pn_service_data.Margin = new System.Windows.Forms.Padding(4);
             this.pn_service_data.Name = "pn_service_data";
             this.pn_service_data.Size = new System.Drawing.Size(392, 82);
             this.pn_service_data.TabIndex = 41;
@@ -197,7 +197,7 @@
             // 
             this.tb_price.Dock = System.Windows.Forms.DockStyle.Top;
             this.tb_price.Location = new System.Drawing.Point(0, 56);
-            this.tb_price.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_price.Margin = new System.Windows.Forms.Padding(4);
             this.tb_price.Name = "tb_price";
             this.tb_price.Size = new System.Drawing.Size(392, 22);
             this.tb_price.TabIndex = 30;
@@ -217,7 +217,7 @@
             // 
             this.tb_name_service.Dock = System.Windows.Forms.DockStyle.Top;
             this.tb_name_service.Location = new System.Drawing.Point(0, 17);
-            this.tb_name_service.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_name_service.Margin = new System.Windows.Forms.Padding(4);
             this.tb_name_service.Name = "tb_name_service";
             this.tb_name_service.Size = new System.Drawing.Size(392, 22);
             this.tb_name_service.TabIndex = 28;
@@ -256,7 +256,7 @@
             this.Controls.Add(this.gb_manipulation);
             this.Controls.Add(this.pn_cancel);
             this.Controls.Add(this.gb_search_filtration);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AmenitiesForm";
             this.Text = "Amenities";
             this.gb_search_filtration.ResumeLayout(false);
