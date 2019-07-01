@@ -49,28 +49,28 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.tbConfirmPassword = new System.Windows.Forms.TextBox();
             this.lblConfirmPassword = new System.Windows.Forms.Label();
-            this.tbRole = new System.Windows.Forms.TextBox();
             this.lblRole = new System.Windows.Forms.Label();
-            this.tbExperience = new System.Windows.Forms.TextBox();
-            this.lblExperience = new System.Windows.Forms.Label();
+            this.dgvAminities = new System.Windows.Forms.DataGridView();
+            this.dgvEmployeePersonalFile = new System.Windows.Forms.DataGridView();
+            this.cbRole = new System.Windows.Forms.ComboBox();
+            this.lblQualification = new System.Windows.Forms.Label();
             this.tbSalary = new System.Windows.Forms.TextBox();
             this.lblSalary = new System.Windows.Forms.Label();
-            this.tbQualification = new System.Windows.Forms.TextBox();
-            this.lblQualification = new System.Windows.Forms.Label();
+            this.tbExperience = new System.Windows.Forms.TextBox();
+            this.lblExperience = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnManipulation = new System.Windows.Forms.Panel();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnInsert = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dgvAminities = new System.Windows.Forms.DataGridView();
-            this.dgvEmployeePersonalFile = new System.Windows.Forms.DataGridView();
             this.gbSearchFiltration.SuspendLayout();
             this.pnCancel.SuspendLayout();
             this.gbManipulation.SuspendLayout();
-            this.pnManipulation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAminities)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployeePersonalFile)).BeginInit();
+            this.pnManipulation.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbSearchFiltration
@@ -139,13 +139,13 @@
             this.gbManipulation.Controls.Add(this.button2);
             this.gbManipulation.Controls.Add(this.button1);
             this.gbManipulation.Controls.Add(this.pnManipulation);
-            this.gbManipulation.Controls.Add(this.tbQualification);
+            this.gbManipulation.Controls.Add(this.comboBox1);
             this.gbManipulation.Controls.Add(this.lblQualification);
             this.gbManipulation.Controls.Add(this.tbSalary);
             this.gbManipulation.Controls.Add(this.lblSalary);
             this.gbManipulation.Controls.Add(this.tbExperience);
             this.gbManipulation.Controls.Add(this.lblExperience);
-            this.gbManipulation.Controls.Add(this.tbRole);
+            this.gbManipulation.Controls.Add(this.cbRole);
             this.gbManipulation.Controls.Add(this.lblRole);
             this.gbManipulation.Controls.Add(this.tbConfirmPassword);
             this.gbManipulation.Controls.Add(this.lblConfirmPassword);
@@ -295,14 +295,6 @@
             this.lblConfirmPassword.TabIndex = 14;
             this.lblConfirmPassword.Text = "Повторите пароль";
             // 
-            // tbRole
-            // 
-            this.tbRole.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tbRole.Location = new System.Drawing.Point(3, 260);
-            this.tbRole.Name = "tbRole";
-            this.tbRole.Size = new System.Drawing.Size(194, 20);
-            this.tbRole.TabIndex = 17;
-            // 
             // lblRole
             // 
             this.lblRole.AutoSize = true;
@@ -313,59 +305,107 @@
             this.lblRole.TabIndex = 16;
             this.lblRole.Text = "Роль";
             // 
-            // tbExperience
+            // dgvAminities
             // 
-            this.tbExperience.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tbExperience.Location = new System.Drawing.Point(3, 293);
-            this.tbExperience.Name = "tbExperience";
-            this.tbExperience.Size = new System.Drawing.Size(194, 20);
-            this.tbExperience.TabIndex = 19;
+            this.dgvAminities.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAminities.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvAminities.Location = new System.Drawing.Point(200, 38);
+            this.dgvAminities.Name = "dgvAminities";
+            this.dgvAminities.Size = new System.Drawing.Size(600, 518);
+            this.dgvAminities.TabIndex = 41;
             // 
-            // lblExperience
+            // dgvEmployeePersonalFile
             // 
-            this.lblExperience.AutoSize = true;
-            this.lblExperience.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblExperience.Location = new System.Drawing.Point(3, 280);
-            this.lblExperience.Name = "lblExperience";
-            this.lblExperience.Size = new System.Drawing.Size(73, 13);
-            this.lblExperience.TabIndex = 18;
-            this.lblExperience.Text = "Стаж работы";
+            this.dgvEmployeePersonalFile.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmployeePersonalFile.Dock = System.Windows.Forms.DockStyle.Right;
+            this.dgvEmployeePersonalFile.Location = new System.Drawing.Point(415, 38);
+            this.dgvEmployeePersonalFile.Name = "dgvEmployeePersonalFile";
+            this.dgvEmployeePersonalFile.Size = new System.Drawing.Size(385, 518);
+            this.dgvEmployeePersonalFile.TabIndex = 42;
             // 
-            // tbSalary
+            // cbRole
             // 
-            this.tbSalary.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tbSalary.Location = new System.Drawing.Point(3, 326);
-            this.tbSalary.Name = "tbSalary";
-            this.tbSalary.Size = new System.Drawing.Size(194, 20);
-            this.tbSalary.TabIndex = 21;
-            // 
-            // lblSalary
-            // 
-            this.lblSalary.AutoSize = true;
-            this.lblSalary.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblSalary.Location = new System.Drawing.Point(3, 313);
-            this.lblSalary.Name = "lblSalary";
-            this.lblSalary.Size = new System.Drawing.Size(99, 13);
-            this.lblSalary.TabIndex = 20;
-            this.lblSalary.Text = "Заработная плата";
-            // 
-            // tbQualification
-            // 
-            this.tbQualification.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tbQualification.Location = new System.Drawing.Point(3, 359);
-            this.tbQualification.Name = "tbQualification";
-            this.tbQualification.Size = new System.Drawing.Size(194, 20);
-            this.tbQualification.TabIndex = 23;
+            this.cbRole.Dock = System.Windows.Forms.DockStyle.Top;
+            this.cbRole.FormattingEnabled = true;
+            this.cbRole.Location = new System.Drawing.Point(3, 260);
+            this.cbRole.Name = "cbRole";
+            this.cbRole.Size = new System.Drawing.Size(194, 21);
+            this.cbRole.TabIndex = 17;
             // 
             // lblQualification
             // 
             this.lblQualification.AutoSize = true;
             this.lblQualification.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblQualification.Location = new System.Drawing.Point(3, 346);
+            this.lblQualification.Location = new System.Drawing.Point(3, 347);
             this.lblQualification.Name = "lblQualification";
             this.lblQualification.Size = new System.Drawing.Size(82, 13);
-            this.lblQualification.TabIndex = 22;
+            this.lblQualification.TabIndex = 51;
             this.lblQualification.Text = "Квалификация";
+            // 
+            // tbSalary
+            // 
+            this.tbSalary.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbSalary.Location = new System.Drawing.Point(3, 327);
+            this.tbSalary.Name = "tbSalary";
+            this.tbSalary.Size = new System.Drawing.Size(194, 20);
+            this.tbSalary.TabIndex = 50;
+            // 
+            // lblSalary
+            // 
+            this.lblSalary.AutoSize = true;
+            this.lblSalary.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblSalary.Location = new System.Drawing.Point(3, 314);
+            this.lblSalary.Name = "lblSalary";
+            this.lblSalary.Size = new System.Drawing.Size(99, 13);
+            this.lblSalary.TabIndex = 49;
+            this.lblSalary.Text = "Заработная плата";
+            // 
+            // tbExperience
+            // 
+            this.tbExperience.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbExperience.Location = new System.Drawing.Point(3, 294);
+            this.tbExperience.Name = "tbExperience";
+            this.tbExperience.Size = new System.Drawing.Size(194, 20);
+            this.tbExperience.TabIndex = 48;
+            // 
+            // lblExperience
+            // 
+            this.lblExperience.AutoSize = true;
+            this.lblExperience.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblExperience.Location = new System.Drawing.Point(3, 281);
+            this.lblExperience.Name = "lblExperience";
+            this.lblExperience.Size = new System.Drawing.Size(73, 13);
+            this.lblExperience.TabIndex = 47;
+            this.lblExperience.Text = "Стаж работы";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(3, 360);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(194, 21);
+            this.comboBox1.TabIndex = 58;
+            // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.Location = new System.Drawing.Point(3, 485);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(194, 26);
+            this.button2.TabIndex = 61;
+            this.button2.Text = "Услуги";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.Location = new System.Drawing.Point(3, 459);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(194, 26);
+            this.button1.TabIndex = 60;
+            this.button1.Text = "Квалификация";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // pnManipulation
             // 
@@ -373,10 +413,10 @@
             this.pnManipulation.Controls.Add(this.btnUpdate);
             this.pnManipulation.Controls.Add(this.btnInsert);
             this.pnManipulation.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnManipulation.Location = new System.Drawing.Point(3, 379);
+            this.pnManipulation.Location = new System.Drawing.Point(3, 381);
             this.pnManipulation.Name = "pnManipulation";
             this.pnManipulation.Size = new System.Drawing.Size(194, 78);
-            this.pnManipulation.TabIndex = 43;
+            this.pnManipulation.TabIndex = 59;
             // 
             // btnDelete
             // 
@@ -408,44 +448,6 @@
             this.btnInsert.Text = "Добавить сотрудника";
             this.btnInsert.UseVisualStyleBackColor = true;
             // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.Location = new System.Drawing.Point(3, 457);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(194, 26);
-            this.button1.TabIndex = 44;
-            this.button1.Text = "Квалификация";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.Location = new System.Drawing.Point(3, 483);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(194, 26);
-            this.button2.TabIndex = 45;
-            this.button2.Text = "Услуги";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // dgvAminities
-            // 
-            this.dgvAminities.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAminities.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvAminities.Location = new System.Drawing.Point(200, 38);
-            this.dgvAminities.Name = "dgvAminities";
-            this.dgvAminities.Size = new System.Drawing.Size(600, 518);
-            this.dgvAminities.TabIndex = 41;
-            // 
-            // dgvEmployeePersonalFile
-            // 
-            this.dgvEmployeePersonalFile.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEmployeePersonalFile.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dgvEmployeePersonalFile.Location = new System.Drawing.Point(415, 38);
-            this.dgvEmployeePersonalFile.Name = "dgvEmployeePersonalFile";
-            this.dgvEmployeePersonalFile.Size = new System.Drawing.Size(385, 518);
-            this.dgvEmployeePersonalFile.TabIndex = 42;
-            // 
             // WorkersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -463,9 +465,9 @@
             this.pnCancel.ResumeLayout(false);
             this.gbManipulation.ResumeLayout(false);
             this.gbManipulation.PerformLayout();
-            this.pnManipulation.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAminities)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployeePersonalFile)).EndInit();
+            this.pnManipulation.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -479,13 +481,6 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnErrors;
         private System.Windows.Forms.GroupBox gbManipulation;
-        private System.Windows.Forms.TextBox tbQualification;
-        private System.Windows.Forms.Label lblQualification;
-        private System.Windows.Forms.TextBox tbSalary;
-        private System.Windows.Forms.Label lblSalary;
-        private System.Windows.Forms.TextBox tbExperience;
-        private System.Windows.Forms.Label lblExperience;
-        private System.Windows.Forms.TextBox tbRole;
         private System.Windows.Forms.Label lblRole;
         private System.Windows.Forms.TextBox tbConfirmPassword;
         private System.Windows.Forms.Label lblConfirmPassword;
@@ -501,13 +496,20 @@
         private System.Windows.Forms.Label lblFirstName;
         private System.Windows.Forms.TextBox tbSecondName;
         private System.Windows.Forms.Label lblSecondName;
+        private System.Windows.Forms.DataGridView dgvAminities;
+        private System.Windows.Forms.DataGridView dgvEmployeePersonalFile;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel pnManipulation;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnInsert;
-        private System.Windows.Forms.DataGridView dgvAminities;
-        private System.Windows.Forms.DataGridView dgvEmployeePersonalFile;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblQualification;
+        private System.Windows.Forms.TextBox tbSalary;
+        private System.Windows.Forms.Label lblSalary;
+        private System.Windows.Forms.TextBox tbExperience;
+        private System.Windows.Forms.Label lblExperience;
+        private System.Windows.Forms.ComboBox cbRole;
     }
 }

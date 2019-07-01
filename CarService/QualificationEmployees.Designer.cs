@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.pnSearch = new System.Windows.Forms.Panel();
-            this.lblSearch = new System.Windows.Forms.Label();
-            this.tbSearch = new System.Windows.Forms.TextBox();
             this.lbQualification = new System.Windows.Forms.ListBox();
+            this.tbSearch = new System.Windows.Forms.TextBox();
+            this.lblSearch = new System.Windows.Forms.Label();
             this.tbNameQualification = new System.Windows.Forms.TextBox();
             this.lblNameQualification = new System.Windows.Forms.Label();
             this.pnManipulation = new System.Windows.Forms.Panel();
@@ -57,15 +57,14 @@
             this.pnSearch.Size = new System.Drawing.Size(494, 304);
             this.pnSearch.TabIndex = 2;
             // 
-            // lblSearch
+            // lbQualification
             // 
-            this.lblSearch.AutoSize = true;
-            this.lblSearch.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblSearch.Location = new System.Drawing.Point(0, 0);
-            this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(116, 13);
-            this.lblSearch.TabIndex = 1;
-            this.lblSearch.Text = "Поиск квалификации";
+            this.lbQualification.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbQualification.FormattingEnabled = true;
+            this.lbQualification.Location = new System.Drawing.Point(0, 33);
+            this.lbQualification.Name = "lbQualification";
+            this.lbQualification.Size = new System.Drawing.Size(494, 271);
+            this.lbQualification.TabIndex = 3;
             // 
             // tbSearch
             // 
@@ -75,14 +74,15 @@
             this.tbSearch.Size = new System.Drawing.Size(494, 20);
             this.tbSearch.TabIndex = 2;
             // 
-            // lbQualification
+            // lblSearch
             // 
-            this.lbQualification.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbQualification.FormattingEnabled = true;
-            this.lbQualification.Location = new System.Drawing.Point(0, 33);
-            this.lbQualification.Name = "lbQualification";
-            this.lbQualification.Size = new System.Drawing.Size(494, 271);
-            this.lbQualification.TabIndex = 3;
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblSearch.Location = new System.Drawing.Point(0, 0);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(116, 13);
+            this.lblSearch.TabIndex = 1;
+            this.lblSearch.Text = "Поиск квалификации";
             // 
             // tbNameQualification
             // 
