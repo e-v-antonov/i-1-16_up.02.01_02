@@ -28,330 +28,330 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_errors = new System.Windows.Forms.Button();
-            this.pn_cancel = new System.Windows.Forms.Panel();
-            this.btn_cancel = new System.Windows.Forms.Button();
-            this.chb_filtration = new System.Windows.Forms.CheckBox();
-            this.tb_search_filtration = new System.Windows.Forms.TextBox();
-            this.gb_search_filtration = new System.Windows.Forms.GroupBox();
-            this.pn_second_name = new System.Windows.Forms.Panel();
-            this.tb_second_name = new System.Windows.Forms.TextBox();
-            this.lbl_second_name = new System.Windows.Forms.Label();
-            this.pn_first_name = new System.Windows.Forms.Panel();
-            this.tb_first_name = new System.Windows.Forms.TextBox();
-            this.lbl_first_name = new System.Windows.Forms.Label();
-            this.pn_patronynic = new System.Windows.Forms.Panel();
-            this.tb_patronynic = new System.Windows.Forms.TextBox();
-            this.lbl_patronynic = new System.Windows.Forms.Label();
-            this.pn_phone_number = new System.Windows.Forms.Panel();
-            this.tb_phone_number = new System.Windows.Forms.TextBox();
-            this.lbl_phone_number = new System.Windows.Forms.Label();
-            this.gb_manipulation = new System.Windows.Forms.GroupBox();
-            this.pn_manipulation = new System.Windows.Forms.Panel();
-            this.btn_delete = new System.Windows.Forms.Button();
-            this.btn_update = new System.Windows.Forms.Button();
-            this.btn_insert = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.pn_cancel.SuspendLayout();
-            this.gb_search_filtration.SuspendLayout();
-            this.pn_second_name.SuspendLayout();
-            this.pn_first_name.SuspendLayout();
-            this.pn_patronynic.SuspendLayout();
-            this.pn_phone_number.SuspendLayout();
-            this.gb_manipulation.SuspendLayout();
-            this.pn_manipulation.SuspendLayout();
+            this.btnErrors = new System.Windows.Forms.Button();
+            this.pnCancel = new System.Windows.Forms.Panel();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.chbFiltration = new System.Windows.Forms.CheckBox();
+            this.tbSearchFiltration = new System.Windows.Forms.TextBox();
+            this.gbSearchFiltration = new System.Windows.Forms.GroupBox();
+            this.pnSecondName = new System.Windows.Forms.Panel();
+            this.tbSecondName = new System.Windows.Forms.TextBox();
+            this.lblSecondName = new System.Windows.Forms.Label();
+            this.pnFirstName = new System.Windows.Forms.Panel();
+            this.tbFirstName = new System.Windows.Forms.TextBox();
+            this.lblFirstName = new System.Windows.Forms.Label();
+            this.pnPatronynic = new System.Windows.Forms.Panel();
+            this.tbPatronynic = new System.Windows.Forms.TextBox();
+            this.lblPatronynic = new System.Windows.Forms.Label();
+            this.pnPhoneNumber = new System.Windows.Forms.Panel();
+            this.tbPhoneNumber = new System.Windows.Forms.TextBox();
+            this.lblPhoneNumber = new System.Windows.Forms.Label();
+            this.gbManipulation = new System.Windows.Forms.GroupBox();
+            this.pnManipulation = new System.Windows.Forms.Panel();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnInsert = new System.Windows.Forms.Button();
+            this.lbClients = new System.Windows.Forms.ListBox();
+            this.pnCancel.SuspendLayout();
+            this.gbSearchFiltration.SuspendLayout();
+            this.pnSecondName.SuspendLayout();
+            this.pnFirstName.SuspendLayout();
+            this.pnPatronynic.SuspendLayout();
+            this.pnPhoneNumber.SuspendLayout();
+            this.gbManipulation.SuspendLayout();
+            this.pnManipulation.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btn_errors
+            // btnErrors
             // 
-            this.btn_errors.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_errors.Location = new System.Drawing.Point(0, 0);
-            this.btn_errors.Name = "btn_errors";
-            this.btn_errors.Size = new System.Drawing.Size(166, 25);
-            this.btn_errors.TabIndex = 35;
-            this.btn_errors.Text = "Ошибки";
-            this.btn_errors.UseVisualStyleBackColor = true;
+            this.btnErrors.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnErrors.Location = new System.Drawing.Point(0, 0);
+            this.btnErrors.Name = "btnErrors";
+            this.btnErrors.Size = new System.Drawing.Size(166, 25);
+            this.btnErrors.TabIndex = 35;
+            this.btnErrors.Text = "Ошибки";
+            this.btnErrors.UseVisualStyleBackColor = true;
             // 
-            // pn_cancel
+            // pnCancel
             // 
-            this.pn_cancel.Controls.Add(this.btn_cancel);
-            this.pn_cancel.Controls.Add(this.btn_errors);
-            this.pn_cancel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pn_cancel.Location = new System.Drawing.Point(0, 354);
-            this.pn_cancel.Name = "pn_cancel";
-            this.pn_cancel.Size = new System.Drawing.Size(800, 25);
-            this.pn_cancel.TabIndex = 39;
+            this.pnCancel.Controls.Add(this.btnCancel);
+            this.pnCancel.Controls.Add(this.btnErrors);
+            this.pnCancel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnCancel.Location = new System.Drawing.Point(0, 354);
+            this.pnCancel.Name = "pnCancel";
+            this.pnCancel.Size = new System.Drawing.Size(800, 25);
+            this.pnCancel.TabIndex = 39;
             // 
-            // btn_cancel
+            // btnCancel
             // 
-            this.btn_cancel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_cancel.Location = new System.Drawing.Point(634, 0);
-            this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(166, 25);
-            this.btn_cancel.TabIndex = 36;
-            this.btn_cancel.Text = "Закрыть";
-            this.btn_cancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnCancel.Location = new System.Drawing.Point(634, 0);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(166, 25);
+            this.btnCancel.TabIndex = 36;
+            this.btnCancel.Text = "Закрыть";
+            this.btnCancel.UseVisualStyleBackColor = true;
             // 
-            // chb_filtration
+            // chbFiltration
             // 
-            this.chb_filtration.AutoSize = true;
-            this.chb_filtration.Dock = System.Windows.Forms.DockStyle.Top;
-            this.chb_filtration.Location = new System.Drawing.Point(687, 16);
-            this.chb_filtration.Name = "chb_filtration";
-            this.chb_filtration.Size = new System.Drawing.Size(110, 17);
-            this.chb_filtration.TabIndex = 1;
-            this.chb_filtration.Text = "Отфильтровать";
-            this.chb_filtration.UseVisualStyleBackColor = true;
+            this.chbFiltration.AutoSize = true;
+            this.chbFiltration.Dock = System.Windows.Forms.DockStyle.Top;
+            this.chbFiltration.Location = new System.Drawing.Point(687, 16);
+            this.chbFiltration.Name = "chbFiltration";
+            this.chbFiltration.Size = new System.Drawing.Size(110, 17);
+            this.chbFiltration.TabIndex = 1;
+            this.chbFiltration.Text = "Отфильтровать";
+            this.chbFiltration.UseVisualStyleBackColor = true;
             // 
-            // tb_search_filtration
+            // tbSearchFiltration
             // 
-            this.tb_search_filtration.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tb_search_filtration.Location = new System.Drawing.Point(3, 16);
-            this.tb_search_filtration.Name = "tb_search_filtration";
-            this.tb_search_filtration.Size = new System.Drawing.Size(684, 20);
-            this.tb_search_filtration.TabIndex = 0;
+            this.tbSearchFiltration.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tbSearchFiltration.Location = new System.Drawing.Point(3, 16);
+            this.tbSearchFiltration.Name = "tbSearchFiltration";
+            this.tbSearchFiltration.Size = new System.Drawing.Size(684, 20);
+            this.tbSearchFiltration.TabIndex = 0;
             // 
-            // gb_search_filtration
+            // gbSearchFiltration
             // 
-            this.gb_search_filtration.Controls.Add(this.chb_filtration);
-            this.gb_search_filtration.Controls.Add(this.tb_search_filtration);
-            this.gb_search_filtration.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gb_search_filtration.Location = new System.Drawing.Point(0, 0);
-            this.gb_search_filtration.Name = "gb_search_filtration";
-            this.gb_search_filtration.Size = new System.Drawing.Size(800, 38);
-            this.gb_search_filtration.TabIndex = 36;
-            this.gb_search_filtration.TabStop = false;
-            this.gb_search_filtration.Text = "Поиск и фильтрация";
+            this.gbSearchFiltration.Controls.Add(this.chbFiltration);
+            this.gbSearchFiltration.Controls.Add(this.tbSearchFiltration);
+            this.gbSearchFiltration.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gbSearchFiltration.Location = new System.Drawing.Point(0, 0);
+            this.gbSearchFiltration.Name = "gbSearchFiltration";
+            this.gbSearchFiltration.Size = new System.Drawing.Size(800, 38);
+            this.gbSearchFiltration.TabIndex = 36;
+            this.gbSearchFiltration.TabStop = false;
+            this.gbSearchFiltration.Text = "Поиск и фильтрация";
             // 
-            // pn_second_name
+            // pnSecondName
             // 
-            this.pn_second_name.Controls.Add(this.tb_second_name);
-            this.pn_second_name.Controls.Add(this.lbl_second_name);
-            this.pn_second_name.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pn_second_name.Location = new System.Drawing.Point(3, 16);
-            this.pn_second_name.Name = "pn_second_name";
-            this.pn_second_name.Size = new System.Drawing.Size(202, 33);
-            this.pn_second_name.TabIndex = 40;
+            this.pnSecondName.Controls.Add(this.tbSecondName);
+            this.pnSecondName.Controls.Add(this.lblSecondName);
+            this.pnSecondName.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnSecondName.Location = new System.Drawing.Point(3, 16);
+            this.pnSecondName.Name = "pnSecondName";
+            this.pnSecondName.Size = new System.Drawing.Size(202, 33);
+            this.pnSecondName.TabIndex = 40;
             // 
-            // tb_second_name
+            // tbSecondName
             // 
-            this.tb_second_name.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tb_second_name.Location = new System.Drawing.Point(0, 13);
-            this.tb_second_name.Name = "tb_second_name";
-            this.tb_second_name.Size = new System.Drawing.Size(202, 20);
-            this.tb_second_name.TabIndex = 28;
+            this.tbSecondName.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbSecondName.Location = new System.Drawing.Point(0, 13);
+            this.tbSecondName.Name = "tbSecondName";
+            this.tbSecondName.Size = new System.Drawing.Size(202, 20);
+            this.tbSecondName.TabIndex = 28;
             // 
-            // lbl_second_name
+            // lblSecondName
             // 
-            this.lbl_second_name.AutoSize = true;
-            this.lbl_second_name.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_second_name.Location = new System.Drawing.Point(0, 0);
-            this.lbl_second_name.Name = "lbl_second_name";
-            this.lbl_second_name.Size = new System.Drawing.Size(100, 13);
-            this.lbl_second_name.TabIndex = 27;
-            this.lbl_second_name.Text = "Фамилия клиента";
+            this.lblSecondName.AutoSize = true;
+            this.lblSecondName.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblSecondName.Location = new System.Drawing.Point(0, 0);
+            this.lblSecondName.Name = "lblSecondName";
+            this.lblSecondName.Size = new System.Drawing.Size(100, 13);
+            this.lblSecondName.TabIndex = 27;
+            this.lblSecondName.Text = "Фамилия клиента";
             // 
-            // pn_first_name
+            // pnFirstName
             // 
-            this.pn_first_name.Controls.Add(this.tb_first_name);
-            this.pn_first_name.Controls.Add(this.lbl_first_name);
-            this.pn_first_name.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pn_first_name.Location = new System.Drawing.Point(205, 16);
-            this.pn_first_name.Name = "pn_first_name";
-            this.pn_first_name.Size = new System.Drawing.Size(202, 33);
-            this.pn_first_name.TabIndex = 41;
+            this.pnFirstName.Controls.Add(this.tbFirstName);
+            this.pnFirstName.Controls.Add(this.lblFirstName);
+            this.pnFirstName.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnFirstName.Location = new System.Drawing.Point(205, 16);
+            this.pnFirstName.Name = "pnFirstName";
+            this.pnFirstName.Size = new System.Drawing.Size(202, 33);
+            this.pnFirstName.TabIndex = 41;
             // 
-            // tb_first_name
+            // tbFirstName
             // 
-            this.tb_first_name.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tb_first_name.Location = new System.Drawing.Point(0, 13);
-            this.tb_first_name.Name = "tb_first_name";
-            this.tb_first_name.Size = new System.Drawing.Size(202, 20);
-            this.tb_first_name.TabIndex = 28;
+            this.tbFirstName.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbFirstName.Location = new System.Drawing.Point(0, 13);
+            this.tbFirstName.Name = "tbFirstName";
+            this.tbFirstName.Size = new System.Drawing.Size(202, 20);
+            this.tbFirstName.TabIndex = 28;
             // 
-            // lbl_first_name
+            // lblFirstName
             // 
-            this.lbl_first_name.AutoSize = true;
-            this.lbl_first_name.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_first_name.Location = new System.Drawing.Point(0, 0);
-            this.lbl_first_name.Name = "lbl_first_name";
-            this.lbl_first_name.Size = new System.Drawing.Size(73, 13);
-            this.lbl_first_name.TabIndex = 27;
-            this.lbl_first_name.Text = "Имя клиента";
+            this.lblFirstName.AutoSize = true;
+            this.lblFirstName.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblFirstName.Location = new System.Drawing.Point(0, 0);
+            this.lblFirstName.Name = "lblFirstName";
+            this.lblFirstName.Size = new System.Drawing.Size(73, 13);
+            this.lblFirstName.TabIndex = 27;
+            this.lblFirstName.Text = "Имя клиента";
             // 
-            // pn_patronynic
+            // pnPatronynic
             // 
-            this.pn_patronynic.Controls.Add(this.tb_patronynic);
-            this.pn_patronynic.Controls.Add(this.lbl_patronynic);
-            this.pn_patronynic.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pn_patronynic.Location = new System.Drawing.Point(407, 16);
-            this.pn_patronynic.Name = "pn_patronynic";
-            this.pn_patronynic.Size = new System.Drawing.Size(202, 33);
-            this.pn_patronynic.TabIndex = 42;
+            this.pnPatronynic.Controls.Add(this.tbPatronynic);
+            this.pnPatronynic.Controls.Add(this.lblPatronynic);
+            this.pnPatronynic.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnPatronynic.Location = new System.Drawing.Point(407, 16);
+            this.pnPatronynic.Name = "pnPatronynic";
+            this.pnPatronynic.Size = new System.Drawing.Size(202, 33);
+            this.pnPatronynic.TabIndex = 42;
             // 
-            // tb_patronynic
+            // tbPatronynic
             // 
-            this.tb_patronynic.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tb_patronynic.Location = new System.Drawing.Point(0, 13);
-            this.tb_patronynic.Name = "tb_patronynic";
-            this.tb_patronynic.Size = new System.Drawing.Size(202, 20);
-            this.tb_patronynic.TabIndex = 28;
+            this.tbPatronynic.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbPatronynic.Location = new System.Drawing.Point(0, 13);
+            this.tbPatronynic.Name = "tbPatronynic";
+            this.tbPatronynic.Size = new System.Drawing.Size(202, 20);
+            this.tbPatronynic.TabIndex = 28;
             // 
-            // lbl_patronynic
+            // lblPatronynic
             // 
-            this.lbl_patronynic.AutoSize = true;
-            this.lbl_patronynic.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_patronynic.Location = new System.Drawing.Point(0, 0);
-            this.lbl_patronynic.Name = "lbl_patronynic";
-            this.lbl_patronynic.Size = new System.Drawing.Size(98, 13);
-            this.lbl_patronynic.TabIndex = 27;
-            this.lbl_patronynic.Text = "Отчество клиента";
+            this.lblPatronynic.AutoSize = true;
+            this.lblPatronynic.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblPatronynic.Location = new System.Drawing.Point(0, 0);
+            this.lblPatronynic.Name = "lblPatronynic";
+            this.lblPatronynic.Size = new System.Drawing.Size(98, 13);
+            this.lblPatronynic.TabIndex = 27;
+            this.lblPatronynic.Text = "Отчество клиента";
             // 
-            // pn_phone_number
+            // pnPhoneNumber
             // 
-            this.pn_phone_number.Controls.Add(this.tb_phone_number);
-            this.pn_phone_number.Controls.Add(this.lbl_phone_number);
-            this.pn_phone_number.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pn_phone_number.Location = new System.Drawing.Point(609, 16);
-            this.pn_phone_number.Name = "pn_phone_number";
-            this.pn_phone_number.Size = new System.Drawing.Size(191, 33);
-            this.pn_phone_number.TabIndex = 43;
+            this.pnPhoneNumber.Controls.Add(this.tbPhoneNumber);
+            this.pnPhoneNumber.Controls.Add(this.lblPhoneNumber);
+            this.pnPhoneNumber.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnPhoneNumber.Location = new System.Drawing.Point(609, 16);
+            this.pnPhoneNumber.Name = "pnPhoneNumber";
+            this.pnPhoneNumber.Size = new System.Drawing.Size(191, 33);
+            this.pnPhoneNumber.TabIndex = 43;
             // 
-            // tb_phone_number
+            // tbPhoneNumber
             // 
-            this.tb_phone_number.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tb_phone_number.Location = new System.Drawing.Point(0, 13);
-            this.tb_phone_number.Name = "tb_phone_number";
-            this.tb_phone_number.Size = new System.Drawing.Size(191, 20);
-            this.tb_phone_number.TabIndex = 30;
+            this.tbPhoneNumber.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbPhoneNumber.Location = new System.Drawing.Point(0, 13);
+            this.tbPhoneNumber.Name = "tbPhoneNumber";
+            this.tbPhoneNumber.Size = new System.Drawing.Size(191, 20);
+            this.tbPhoneNumber.TabIndex = 30;
             // 
-            // lbl_phone_number
+            // lblPhoneNumber
             // 
-            this.lbl_phone_number.AutoSize = true;
-            this.lbl_phone_number.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_phone_number.Location = new System.Drawing.Point(0, 0);
-            this.lbl_phone_number.Name = "lbl_phone_number";
-            this.lbl_phone_number.Size = new System.Drawing.Size(137, 13);
-            this.lbl_phone_number.TabIndex = 29;
-            this.lbl_phone_number.Text = "Номер телефона клиента";
+            this.lblPhoneNumber.AutoSize = true;
+            this.lblPhoneNumber.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblPhoneNumber.Location = new System.Drawing.Point(0, 0);
+            this.lblPhoneNumber.Name = "lblPhoneNumber";
+            this.lblPhoneNumber.Size = new System.Drawing.Size(137, 13);
+            this.lblPhoneNumber.TabIndex = 29;
+            this.lblPhoneNumber.Text = "Номер телефона клиента";
             // 
-            // gb_manipulation
+            // gbManipulation
             // 
-            this.gb_manipulation.Controls.Add(this.pn_phone_number);
-            this.gb_manipulation.Controls.Add(this.pn_patronynic);
-            this.gb_manipulation.Controls.Add(this.pn_first_name);
-            this.gb_manipulation.Controls.Add(this.pn_second_name);
-            this.gb_manipulation.Controls.Add(this.pn_manipulation);
-            this.gb_manipulation.Location = new System.Drawing.Point(0, 276);
-            this.gb_manipulation.Name = "gb_manipulation";
-            this.gb_manipulation.Size = new System.Drawing.Size(800, 78);
-            this.gb_manipulation.TabIndex = 38;
-            this.gb_manipulation.TabStop = false;
-            this.gb_manipulation.Text = "Манипуляция данными";
+            this.gbManipulation.Controls.Add(this.pnPhoneNumber);
+            this.gbManipulation.Controls.Add(this.pnPatronynic);
+            this.gbManipulation.Controls.Add(this.pnFirstName);
+            this.gbManipulation.Controls.Add(this.pnSecondName);
+            this.gbManipulation.Controls.Add(this.pnManipulation);
+            this.gbManipulation.Location = new System.Drawing.Point(0, 276);
+            this.gbManipulation.Name = "gbManipulation";
+            this.gbManipulation.Size = new System.Drawing.Size(800, 78);
+            this.gbManipulation.TabIndex = 38;
+            this.gbManipulation.TabStop = false;
+            this.gbManipulation.Text = "Манипуляция данными";
             // 
-            // pn_manipulation
+            // pnManipulation
             // 
-            this.pn_manipulation.Controls.Add(this.btn_delete);
-            this.pn_manipulation.Controls.Add(this.btn_update);
-            this.pn_manipulation.Controls.Add(this.btn_insert);
-            this.pn_manipulation.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pn_manipulation.Location = new System.Drawing.Point(3, 49);
-            this.pn_manipulation.Name = "pn_manipulation";
-            this.pn_manipulation.Size = new System.Drawing.Size(794, 26);
-            this.pn_manipulation.TabIndex = 39;
+            this.pnManipulation.Controls.Add(this.btnDelete);
+            this.pnManipulation.Controls.Add(this.btnUpdate);
+            this.pnManipulation.Controls.Add(this.btnInsert);
+            this.pnManipulation.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnManipulation.Location = new System.Drawing.Point(3, 49);
+            this.pnManipulation.Name = "pnManipulation";
+            this.pnManipulation.Size = new System.Drawing.Size(794, 26);
+            this.pnManipulation.TabIndex = 39;
             // 
-            // btn_delete
+            // btnDelete
             // 
-            this.btn_delete.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_delete.Location = new System.Drawing.Point(530, 0);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(267, 26);
-            this.btn_delete.TabIndex = 34;
-            this.btn_delete.Text = "Удалить данные клиента";
-            this.btn_delete.UseVisualStyleBackColor = true;
+            this.btnDelete.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnDelete.Location = new System.Drawing.Point(530, 0);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(267, 26);
+            this.btnDelete.TabIndex = 34;
+            this.btnDelete.Text = "Удалить данные клиента";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // btn_update
+            // btnUpdate
             // 
-            this.btn_update.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_update.Location = new System.Drawing.Point(265, 0);
-            this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(265, 26);
-            this.btn_update.TabIndex = 33;
-            this.btn_update.Text = "Изменить данные клиента";
-            this.btn_update.UseVisualStyleBackColor = true;
+            this.btnUpdate.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnUpdate.Location = new System.Drawing.Point(265, 0);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(265, 26);
+            this.btnUpdate.TabIndex = 33;
+            this.btnUpdate.Text = "Изменить данные клиента";
+            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // btn_insert
+            // btnInsert
             // 
-            this.btn_insert.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_insert.Location = new System.Drawing.Point(0, 0);
-            this.btn_insert.Name = "btn_insert";
-            this.btn_insert.Size = new System.Drawing.Size(265, 26);
-            this.btn_insert.TabIndex = 32;
-            this.btn_insert.Text = "Добавить данные клиента";
-            this.btn_insert.UseVisualStyleBackColor = true;
+            this.btnInsert.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnInsert.Location = new System.Drawing.Point(0, 0);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(265, 26);
+            this.btnInsert.TabIndex = 32;
+            this.btnInsert.Text = "Добавить данные клиента";
+            this.btnInsert.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // lbClients
             // 
-            this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(0, 38);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(800, 316);
-            this.listBox1.TabIndex = 40;
+            this.lbClients.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbClients.FormattingEnabled = true;
+            this.lbClients.Location = new System.Drawing.Point(0, 38);
+            this.lbClients.Name = "lbClients";
+            this.lbClients.Size = new System.Drawing.Size(800, 316);
+            this.lbClients.TabIndex = 40;
             // 
             // ClientsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 379);
-            this.Controls.Add(this.gb_manipulation);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.pn_cancel);
-            this.Controls.Add(this.gb_search_filtration);
+            this.Controls.Add(this.gbManipulation);
+            this.Controls.Add(this.lbClients);
+            this.Controls.Add(this.pnCancel);
+            this.Controls.Add(this.gbSearchFiltration);
             this.Name = "ClientsForm";
             this.Text = "Справочник Клиенты";
-            this.pn_cancel.ResumeLayout(false);
-            this.gb_search_filtration.ResumeLayout(false);
-            this.gb_search_filtration.PerformLayout();
-            this.pn_second_name.ResumeLayout(false);
-            this.pn_second_name.PerformLayout();
-            this.pn_first_name.ResumeLayout(false);
-            this.pn_first_name.PerformLayout();
-            this.pn_patronynic.ResumeLayout(false);
-            this.pn_patronynic.PerformLayout();
-            this.pn_phone_number.ResumeLayout(false);
-            this.pn_phone_number.PerformLayout();
-            this.gb_manipulation.ResumeLayout(false);
-            this.pn_manipulation.ResumeLayout(false);
+            this.pnCancel.ResumeLayout(false);
+            this.gbSearchFiltration.ResumeLayout(false);
+            this.gbSearchFiltration.PerformLayout();
+            this.pnSecondName.ResumeLayout(false);
+            this.pnSecondName.PerformLayout();
+            this.pnFirstName.ResumeLayout(false);
+            this.pnFirstName.PerformLayout();
+            this.pnPatronynic.ResumeLayout(false);
+            this.pnPatronynic.PerformLayout();
+            this.pnPhoneNumber.ResumeLayout(false);
+            this.pnPhoneNumber.PerformLayout();
+            this.gbManipulation.ResumeLayout(false);
+            this.pnManipulation.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btn_errors;
-        private System.Windows.Forms.Panel pn_cancel;
-        private System.Windows.Forms.Button btn_cancel;
-        private System.Windows.Forms.CheckBox chb_filtration;
-        private System.Windows.Forms.TextBox tb_search_filtration;
-        private System.Windows.Forms.GroupBox gb_search_filtration;
-        private System.Windows.Forms.Panel pn_second_name;
-        private System.Windows.Forms.TextBox tb_second_name;
-        private System.Windows.Forms.Label lbl_second_name;
-        private System.Windows.Forms.Panel pn_first_name;
-        private System.Windows.Forms.TextBox tb_first_name;
-        private System.Windows.Forms.Label lbl_first_name;
-        private System.Windows.Forms.Panel pn_patronynic;
-        private System.Windows.Forms.TextBox tb_patronynic;
-        private System.Windows.Forms.Label lbl_patronynic;
-        private System.Windows.Forms.Panel pn_phone_number;
-        private System.Windows.Forms.TextBox tb_phone_number;
-        private System.Windows.Forms.Label lbl_phone_number;
-        private System.Windows.Forms.GroupBox gb_manipulation;
-        private System.Windows.Forms.Panel pn_manipulation;
-        private System.Windows.Forms.Button btn_delete;
-        private System.Windows.Forms.Button btn_update;
-        private System.Windows.Forms.Button btn_insert;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button btnErrors;
+        private System.Windows.Forms.Panel pnCancel;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.CheckBox chbFiltration;
+        private System.Windows.Forms.TextBox tbSearchFiltration;
+        private System.Windows.Forms.GroupBox gbSearchFiltration;
+        private System.Windows.Forms.Panel pnSecondName;
+        private System.Windows.Forms.TextBox tbSecondName;
+        private System.Windows.Forms.Label lblSecondName;
+        private System.Windows.Forms.Panel pnFirstName;
+        private System.Windows.Forms.TextBox tbFirstName;
+        private System.Windows.Forms.Label lblFirstName;
+        private System.Windows.Forms.Panel pnPatronynic;
+        private System.Windows.Forms.TextBox tbPatronynic;
+        private System.Windows.Forms.Label lblPatronynic;
+        private System.Windows.Forms.Panel pnPhoneNumber;
+        private System.Windows.Forms.TextBox tbPhoneNumber;
+        private System.Windows.Forms.Label lblPhoneNumber;
+        private System.Windows.Forms.GroupBox gbManipulation;
+        private System.Windows.Forms.Panel pnManipulation;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnInsert;
+        private System.Windows.Forms.ListBox lbClients;
     }
 }
