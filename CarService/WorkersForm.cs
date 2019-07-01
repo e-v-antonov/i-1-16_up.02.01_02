@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CarService
 {
-    public partial class AuthorizationForm : Form
+    public partial class WorkersForm : Form
     {
-        public AuthorizationForm()
+        public WorkersForm()
         {
             InitializeComponent();
         }

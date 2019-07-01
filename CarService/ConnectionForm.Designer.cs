@@ -173,6 +173,7 @@
             this.btnCancel.TabIndex = 30;
             this.btnCancel.Text = "Отменить";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnConnect
             // 
@@ -187,6 +188,7 @@
             this.btnConnect.TabIndex = 29;
             this.btnConnect.Text = "Подключить";
             this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
             // btnCheck
             // 
@@ -203,6 +205,7 @@
             this.btnCheck.TabIndex = 28;
             this.btnCheck.Text = "Проверить";
             this.btnCheck.UseVisualStyleBackColor = false;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // sstStatusConnection
             // 
@@ -246,6 +249,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ConnectionForm";
             this.Text = "Подключение к БД";
+            this.Load += new System.EventHandler(this.ConnectionForm_Load);
             this.sstStatusConnection.ResumeLayout(false);
             this.sstStatusConnection.PerformLayout();
             this.ResumeLayout(false);

@@ -28,208 +28,201 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbl_second_name = new System.Windows.Forms.Label();
-            this.tb_second_name = new System.Windows.Forms.TextBox();
-            this.tb_first_name = new System.Windows.Forms.TextBox();
-            this.lbl_first_name = new System.Windows.Forms.Label();
-            this.tb_pantronymic = new System.Windows.Forms.TextBox();
-            this.lbl_pantronymic = new System.Windows.Forms.Label();
-            this.tb_phone_number = new System.Windows.Forms.TextBox();
-            this.lbl_phone_number = new System.Windows.Forms.Label();
-            this.tb_login = new System.Windows.Forms.TextBox();
-            this.lbl_login = new System.Windows.Forms.Label();
-            this.tb_password = new System.Windows.Forms.TextBox();
-            this.lbl_password = new System.Windows.Forms.Label();
-            this.tb_confirm_password = new System.Windows.Forms.TextBox();
-            this.lbl_confirm_password = new System.Windows.Forms.Label();
-            this.btn_authorization = new System.Windows.Forms.Button();
-            this.btn_registration = new System.Windows.Forms.Button();
+            this.pnEmpty = new System.Windows.Forms.Panel();
+            this.lblSecondName = new System.Windows.Forms.Label();
+            this.tbSecondName = new System.Windows.Forms.TextBox();
+            this.tbFirstName = new System.Windows.Forms.TextBox();
+            this.lblFirstName = new System.Windows.Forms.Label();
+            this.tbPantronymic = new System.Windows.Forms.TextBox();
+            this.lblPantronymic = new System.Windows.Forms.Label();
+            this.tbPhoneNumber = new System.Windows.Forms.TextBox();
+            this.lblPhoneNumber = new System.Windows.Forms.Label();
+            this.tbLogin = new System.Windows.Forms.TextBox();
+            this.lblLogin = new System.Windows.Forms.Label();
+            this.tbPassword = new System.Windows.Forms.TextBox();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.tbConfirmPassword = new System.Windows.Forms.TextBox();
+            this.lblConfirmPassword = new System.Windows.Forms.Label();
+            this.btnAuthorization = new System.Windows.Forms.Button();
+            this.btnRegistration = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lbl_second_name
+            // pnEmpty
             // 
-            this.lbl_second_name.AutoSize = true;
-            this.lbl_second_name.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_second_name.Location = new System.Drawing.Point(0, 0);
-            this.lbl_second_name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_second_name.Name = "lbl_second_name";
-            this.lbl_second_name.Size = new System.Drawing.Size(70, 17);
-            this.lbl_second_name.TabIndex = 2;
-            this.lbl_second_name.Text = "Фамилия";
+            this.pnEmpty.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnEmpty.Location = new System.Drawing.Point(0, 0);
+            this.pnEmpty.Name = "pnEmpty";
+            this.pnEmpty.Size = new System.Drawing.Size(314, 40);
+            this.pnEmpty.TabIndex = 0;
             // 
-            // tb_second_name
+            // lblSecondName
             // 
-            this.tb_second_name.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tb_second_name.Location = new System.Drawing.Point(0, 17);
-            this.tb_second_name.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_second_name.Name = "tb_second_name";
-            this.tb_second_name.Size = new System.Drawing.Size(419, 22);
-            this.tb_second_name.TabIndex = 4;
+            this.lblSecondName.AutoSize = true;
+            this.lblSecondName.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblSecondName.Location = new System.Drawing.Point(0, 40);
+            this.lblSecondName.Name = "lblSecondName";
+            this.lblSecondName.Size = new System.Drawing.Size(56, 13);
+            this.lblSecondName.TabIndex = 2;
+            this.lblSecondName.Text = "Фамилия";
             // 
-            // tb_first_name
+            // tbSecondName
             // 
-            this.tb_first_name.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tb_first_name.Location = new System.Drawing.Point(0, 56);
-            this.tb_first_name.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_first_name.Name = "tb_first_name";
-            this.tb_first_name.Size = new System.Drawing.Size(419, 22);
-            this.tb_first_name.TabIndex = 6;
+            this.tbSecondName.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbSecondName.Location = new System.Drawing.Point(0, 53);
+            this.tbSecondName.Name = "tbSecondName";
+            this.tbSecondName.Size = new System.Drawing.Size(314, 20);
+            this.tbSecondName.TabIndex = 4;
             // 
-            // lbl_first_name
+            // tbFirstName
             // 
-            this.lbl_first_name.AutoSize = true;
-            this.lbl_first_name.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_first_name.Location = new System.Drawing.Point(0, 39);
-            this.lbl_first_name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_first_name.Name = "lbl_first_name";
-            this.lbl_first_name.Size = new System.Drawing.Size(35, 17);
-            this.lbl_first_name.TabIndex = 5;
-            this.lbl_first_name.Text = "Имя";
+            this.tbFirstName.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbFirstName.Location = new System.Drawing.Point(0, 86);
+            this.tbFirstName.Name = "tbFirstName";
+            this.tbFirstName.Size = new System.Drawing.Size(314, 20);
+            this.tbFirstName.TabIndex = 6;
             // 
-            // tb_pantronymic
+            // lblFirstName
             // 
-            this.tb_pantronymic.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tb_pantronymic.Location = new System.Drawing.Point(0, 95);
-            this.tb_pantronymic.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_pantronymic.Name = "tb_pantronymic";
-            this.tb_pantronymic.Size = new System.Drawing.Size(419, 22);
-            this.tb_pantronymic.TabIndex = 8;
+            this.lblFirstName.AutoSize = true;
+            this.lblFirstName.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblFirstName.Location = new System.Drawing.Point(0, 73);
+            this.lblFirstName.Name = "lblFirstName";
+            this.lblFirstName.Size = new System.Drawing.Size(29, 13);
+            this.lblFirstName.TabIndex = 5;
+            this.lblFirstName.Text = "Имя";
             // 
-            // lbl_pantronymic
+            // tbPantronymic
             // 
-            this.lbl_pantronymic.AutoSize = true;
-            this.lbl_pantronymic.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_pantronymic.Location = new System.Drawing.Point(0, 78);
-            this.lbl_pantronymic.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_pantronymic.Name = "lbl_pantronymic";
-            this.lbl_pantronymic.Size = new System.Drawing.Size(71, 17);
-            this.lbl_pantronymic.TabIndex = 7;
-            this.lbl_pantronymic.Text = "Отчество";
+            this.tbPantronymic.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbPantronymic.Location = new System.Drawing.Point(0, 119);
+            this.tbPantronymic.Name = "tbPantronymic";
+            this.tbPantronymic.Size = new System.Drawing.Size(314, 20);
+            this.tbPantronymic.TabIndex = 8;
             // 
-            // tb_phone_number
+            // lblPantronymic
             // 
-            this.tb_phone_number.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tb_phone_number.Location = new System.Drawing.Point(0, 134);
-            this.tb_phone_number.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_phone_number.Name = "tb_phone_number";
-            this.tb_phone_number.Size = new System.Drawing.Size(419, 22);
-            this.tb_phone_number.TabIndex = 10;
+            this.lblPantronymic.AutoSize = true;
+            this.lblPantronymic.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblPantronymic.Location = new System.Drawing.Point(0, 106);
+            this.lblPantronymic.Name = "lblPantronymic";
+            this.lblPantronymic.Size = new System.Drawing.Size(54, 13);
+            this.lblPantronymic.TabIndex = 7;
+            this.lblPantronymic.Text = "Отчество";
             // 
-            // lbl_phone_number
+            // tbPhoneNumber
             // 
-            this.lbl_phone_number.AutoSize = true;
-            this.lbl_phone_number.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_phone_number.Location = new System.Drawing.Point(0, 117);
-            this.lbl_phone_number.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_phone_number.Name = "lbl_phone_number";
-            this.lbl_phone_number.Size = new System.Drawing.Size(121, 17);
-            this.lbl_phone_number.TabIndex = 9;
-            this.lbl_phone_number.Text = "Номер телефона";
+            this.tbPhoneNumber.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbPhoneNumber.Location = new System.Drawing.Point(0, 152);
+            this.tbPhoneNumber.Name = "tbPhoneNumber";
+            this.tbPhoneNumber.Size = new System.Drawing.Size(314, 20);
+            this.tbPhoneNumber.TabIndex = 10;
             // 
-            // tb_login
+            // lblPhoneNumber
             // 
-            this.tb_login.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tb_login.Location = new System.Drawing.Point(0, 173);
-            this.tb_login.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_login.Name = "tb_login";
-            this.tb_login.Size = new System.Drawing.Size(419, 22);
-            this.tb_login.TabIndex = 12;
+            this.lblPhoneNumber.AutoSize = true;
+            this.lblPhoneNumber.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblPhoneNumber.Location = new System.Drawing.Point(0, 139);
+            this.lblPhoneNumber.Name = "lblPhoneNumber";
+            this.lblPhoneNumber.Size = new System.Drawing.Size(93, 13);
+            this.lblPhoneNumber.TabIndex = 9;
+            this.lblPhoneNumber.Text = "Номер телефона";
             // 
-            // lbl_login
+            // tbLogin
             // 
-            this.lbl_login.AutoSize = true;
-            this.lbl_login.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_login.Location = new System.Drawing.Point(0, 156);
-            this.lbl_login.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_login.Name = "lbl_login";
-            this.lbl_login.Size = new System.Drawing.Size(47, 17);
-            this.lbl_login.TabIndex = 11;
-            this.lbl_login.Text = "Логин";
+            this.tbLogin.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbLogin.Location = new System.Drawing.Point(0, 185);
+            this.tbLogin.Name = "tbLogin";
+            this.tbLogin.Size = new System.Drawing.Size(314, 20);
+            this.tbLogin.TabIndex = 12;
             // 
-            // tb_password
+            // lblLogin
             // 
-            this.tb_password.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tb_password.Location = new System.Drawing.Point(0, 212);
-            this.tb_password.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_password.Name = "tb_password";
-            this.tb_password.Size = new System.Drawing.Size(419, 22);
-            this.tb_password.TabIndex = 15;
+            this.lblLogin.AutoSize = true;
+            this.lblLogin.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblLogin.Location = new System.Drawing.Point(0, 172);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(38, 13);
+            this.lblLogin.TabIndex = 11;
+            this.lblLogin.Text = "Логин";
             // 
-            // lbl_password
+            // tbPassword
             // 
-            this.lbl_password.AutoSize = true;
-            this.lbl_password.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_password.Location = new System.Drawing.Point(0, 195);
-            this.lbl_password.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_password.Name = "lbl_password";
-            this.lbl_password.Size = new System.Drawing.Size(57, 17);
-            this.lbl_password.TabIndex = 14;
-            this.lbl_password.Text = "Пароль";
+            this.tbPassword.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbPassword.Location = new System.Drawing.Point(0, 218);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.Size = new System.Drawing.Size(314, 20);
+            this.tbPassword.TabIndex = 15;
             // 
-            // tb_confirm_password
+            // lblPassword
             // 
-            this.tb_confirm_password.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tb_confirm_password.Location = new System.Drawing.Point(0, 251);
-            this.tb_confirm_password.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_confirm_password.Name = "tb_confirm_password";
-            this.tb_confirm_password.Size = new System.Drawing.Size(419, 22);
-            this.tb_confirm_password.TabIndex = 17;
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblPassword.Location = new System.Drawing.Point(0, 205);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(45, 13);
+            this.lblPassword.TabIndex = 14;
+            this.lblPassword.Text = "Пароль";
             // 
-            // lbl_confirm_password
+            // tbConfirmPassword
             // 
-            this.lbl_confirm_password.AutoSize = true;
-            this.lbl_confirm_password.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_confirm_password.Location = new System.Drawing.Point(0, 234);
-            this.lbl_confirm_password.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_confirm_password.Name = "lbl_confirm_password";
-            this.lbl_confirm_password.Size = new System.Drawing.Size(146, 17);
-            this.lbl_confirm_password.TabIndex = 16;
-            this.lbl_confirm_password.Text = "Подтвердите пароль";
+            this.tbConfirmPassword.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbConfirmPassword.Location = new System.Drawing.Point(0, 251);
+            this.tbConfirmPassword.Name = "tbConfirmPassword";
+            this.tbConfirmPassword.Size = new System.Drawing.Size(314, 20);
+            this.tbConfirmPassword.TabIndex = 17;
             // 
-            // btn_authorization
+            // lblConfirmPassword
             // 
-            this.btn_authorization.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_authorization.Location = new System.Drawing.Point(0, 301);
-            this.btn_authorization.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_authorization.Name = "btn_authorization";
-            this.btn_authorization.Size = new System.Drawing.Size(419, 28);
-            this.btn_authorization.TabIndex = 13;
-            this.btn_authorization.Text = "Авторизироваться";
-            this.btn_authorization.UseVisualStyleBackColor = true;
+            this.lblConfirmPassword.AutoSize = true;
+            this.lblConfirmPassword.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblConfirmPassword.Location = new System.Drawing.Point(0, 238);
+            this.lblConfirmPassword.Name = "lblConfirmPassword";
+            this.lblConfirmPassword.Size = new System.Drawing.Size(112, 13);
+            this.lblConfirmPassword.TabIndex = 16;
+            this.lblConfirmPassword.Text = "Подтвердите пароль";
             // 
-            // btn_registration
+            // btnAuthorization
             // 
-            this.btn_registration.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_registration.Location = new System.Drawing.Point(0, 273);
-            this.btn_registration.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_registration.Name = "btn_registration";
-            this.btn_registration.Size = new System.Drawing.Size(419, 28);
-            this.btn_registration.TabIndex = 18;
-            this.btn_registration.Text = "Зарегистрироваться";
-            this.btn_registration.UseVisualStyleBackColor = true;
+            this.btnAuthorization.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnAuthorization.Location = new System.Drawing.Point(0, 349);
+            this.btnAuthorization.Name = "btnAuthorization";
+            this.btnAuthorization.Size = new System.Drawing.Size(314, 23);
+            this.btnAuthorization.TabIndex = 13;
+            this.btnAuthorization.Text = "Авторизироваться";
+            this.btnAuthorization.UseVisualStyleBackColor = true;
+            // 
+            // btnRegistration
+            // 
+            this.btnRegistration.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnRegistration.Location = new System.Drawing.Point(0, 326);
+            this.btnRegistration.Name = "btnRegistration";
+            this.btnRegistration.Size = new System.Drawing.Size(314, 23);
+            this.btnRegistration.TabIndex = 18;
+            this.btnRegistration.Text = "Зарегистрироваться";
+            this.btnRegistration.UseVisualStyleBackColor = true;
             // 
             // RegistrationForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(419, 327);
-            this.Controls.Add(this.btn_authorization);
-            this.Controls.Add(this.btn_registration);
-            this.Controls.Add(this.tb_confirm_password);
-            this.Controls.Add(this.lbl_confirm_password);
-            this.Controls.Add(this.tb_password);
-            this.Controls.Add(this.lbl_password);
-            this.Controls.Add(this.tb_login);
-            this.Controls.Add(this.lbl_login);
-            this.Controls.Add(this.tb_phone_number);
-            this.Controls.Add(this.lbl_phone_number);
-            this.Controls.Add(this.tb_pantronymic);
-            this.Controls.Add(this.lbl_pantronymic);
-            this.Controls.Add(this.tb_first_name);
-            this.Controls.Add(this.lbl_first_name);
-            this.Controls.Add(this.tb_second_name);
-            this.Controls.Add(this.lbl_second_name);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.ClientSize = new System.Drawing.Size(314, 372);
+            this.Controls.Add(this.btnRegistration);
+            this.Controls.Add(this.tbConfirmPassword);
+            this.Controls.Add(this.lblConfirmPassword);
+            this.Controls.Add(this.tbPassword);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.btnAuthorization);
+            this.Controls.Add(this.tbLogin);
+            this.Controls.Add(this.lblLogin);
+            this.Controls.Add(this.tbPhoneNumber);
+            this.Controls.Add(this.lblPhoneNumber);
+            this.Controls.Add(this.tbPantronymic);
+            this.Controls.Add(this.lblPantronymic);
+            this.Controls.Add(this.tbFirstName);
+            this.Controls.Add(this.lblFirstName);
+            this.Controls.Add(this.tbSecondName);
+            this.Controls.Add(this.lblSecondName);
+            this.Controls.Add(this.pnEmpty);
             this.Name = "RegistrationForm";
             this.Text = "Регистрация";
             this.ResumeLayout(false);
@@ -238,21 +231,23 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label lbl_second_name;
-        private System.Windows.Forms.TextBox tb_second_name;
-        private System.Windows.Forms.TextBox tb_first_name;
-        private System.Windows.Forms.Label lbl_first_name;
-        private System.Windows.Forms.TextBox tb_pantronymic;
-        private System.Windows.Forms.Label lbl_pantronymic;
-        private System.Windows.Forms.TextBox tb_phone_number;
-        private System.Windows.Forms.Label lbl_phone_number;
-        private System.Windows.Forms.TextBox tb_login;
-        private System.Windows.Forms.Label lbl_login;
-        private System.Windows.Forms.TextBox tb_password;
-        private System.Windows.Forms.Label lbl_password;
-        private System.Windows.Forms.TextBox tb_confirm_password;
-        private System.Windows.Forms.Label lbl_confirm_password;
-        private System.Windows.Forms.Button btn_authorization;
-        private System.Windows.Forms.Button btn_registration;
+
+        private System.Windows.Forms.Panel pnEmpty;
+        private System.Windows.Forms.Label lblSecondName;
+        private System.Windows.Forms.TextBox tbSecondName;
+        private System.Windows.Forms.TextBox tbFirstName;
+        private System.Windows.Forms.Label lblFirstName;
+        private System.Windows.Forms.TextBox tbPantronymic;
+        private System.Windows.Forms.Label lblPantronymic;
+        private System.Windows.Forms.TextBox tbPhoneNumber;
+        private System.Windows.Forms.Label lblPhoneNumber;
+        private System.Windows.Forms.TextBox tbLogin;
+        private System.Windows.Forms.Label lblLogin;
+        private System.Windows.Forms.TextBox tbPassword;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.TextBox tbConfirmPassword;
+        private System.Windows.Forms.Label lblConfirmPassword;
+        private System.Windows.Forms.Button btnAuthorization;
+        private System.Windows.Forms.Button btnRegistration;
     }
 }

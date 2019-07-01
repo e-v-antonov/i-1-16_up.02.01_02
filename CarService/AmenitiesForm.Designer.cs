@@ -28,267 +28,241 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gb_search_filtration = new System.Windows.Forms.GroupBox();
-            this.chb_filtration = new System.Windows.Forms.CheckBox();
-            this.tb_search_filtration = new System.Windows.Forms.TextBox();
-            this.pn_cancel = new System.Windows.Forms.Panel();
-            this.btn_cancel = new System.Windows.Forms.Button();
-            this.btn_errors = new System.Windows.Forms.Button();
-            this.gb_manipulation = new System.Windows.Forms.GroupBox();
-            this.pn_manipulation = new System.Windows.Forms.Panel();
-            this.btn_delete = new System.Windows.Forms.Button();
-            this.btn_update = new System.Windows.Forms.Button();
-            this.btn_insert = new System.Windows.Forms.Button();
-            this.pn_service_data = new System.Windows.Forms.Panel();
-            this.tb_price = new System.Windows.Forms.TextBox();
-            this.lbl_price = new System.Windows.Forms.Label();
-            this.tb_name_service = new System.Windows.Forms.TextBox();
-            this.lbl_name_service = new System.Windows.Forms.Label();
-            this.dgvAmenities = new System.Windows.Forms.DataGridView();
-            this.gb_search_filtration.SuspendLayout();
-            this.pn_cancel.SuspendLayout();
-            this.gb_manipulation.SuspendLayout();
-            this.pn_manipulation.SuspendLayout();
-            this.pn_service_data.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAmenities)).BeginInit();
+            this.gbSearchFiltration = new System.Windows.Forms.GroupBox();
+            this.chbFiltration = new System.Windows.Forms.CheckBox();
+            this.tbSearchFiltration = new System.Windows.Forms.TextBox();
+            this.pnCancel = new System.Windows.Forms.Panel();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnErrors = new System.Windows.Forms.Button();
+            this.lbAminities = new System.Windows.Forms.ListBox();
+            this.gbManipulation = new System.Windows.Forms.GroupBox();
+            this.pnManipulation = new System.Windows.Forms.Panel();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnInsert = new System.Windows.Forms.Button();
+            this.pnServiceData = new System.Windows.Forms.Panel();
+            this.tbPrice = new System.Windows.Forms.TextBox();
+            this.lblPrice = new System.Windows.Forms.Label();
+            this.tbNameService = new System.Windows.Forms.TextBox();
+            this.lblNameService = new System.Windows.Forms.Label();
+            this.gbSearchFiltration.SuspendLayout();
+            this.pnCancel.SuspendLayout();
+            this.gbManipulation.SuspendLayout();
+            this.pnManipulation.SuspendLayout();
+            this.pnServiceData.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gb_search_filtration
+            // gbSearchFiltration
             // 
-            this.gb_search_filtration.Controls.Add(this.chb_filtration);
-            this.gb_search_filtration.Controls.Add(this.tb_search_filtration);
-            this.gb_search_filtration.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gb_search_filtration.Location = new System.Drawing.Point(0, 0);
-            this.gb_search_filtration.Margin = new System.Windows.Forms.Padding(4);
-            this.gb_search_filtration.Name = "gb_search_filtration";
-            this.gb_search_filtration.Padding = new System.Windows.Forms.Padding(4);
-            this.gb_search_filtration.Size = new System.Drawing.Size(400, 47);
-            this.gb_search_filtration.TabIndex = 37;
-            this.gb_search_filtration.TabStop = false;
-            this.gb_search_filtration.Text = "Поиск и фильтрация";
+            this.gbSearchFiltration.Controls.Add(this.chbFiltration);
+            this.gbSearchFiltration.Controls.Add(this.tbSearchFiltration);
+            this.gbSearchFiltration.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gbSearchFiltration.Location = new System.Drawing.Point(0, 0);
+            this.gbSearchFiltration.Name = "gbSearchFiltration";
+            this.gbSearchFiltration.Size = new System.Drawing.Size(300, 38);
+            this.gbSearchFiltration.TabIndex = 37;
+            this.gbSearchFiltration.TabStop = false;
+            this.gbSearchFiltration.Text = "Поиск и фильтрация";
             // 
-            // chb_filtration
+            // chbFiltration
             // 
-            this.chb_filtration.AutoSize = true;
-            this.chb_filtration.Dock = System.Windows.Forms.DockStyle.Top;
-            this.chb_filtration.Location = new System.Drawing.Point(252, 19);
-            this.chb_filtration.Margin = new System.Windows.Forms.Padding(4);
-            this.chb_filtration.Name = "chb_filtration";
-            this.chb_filtration.Size = new System.Drawing.Size(144, 21);
-            this.chb_filtration.TabIndex = 1;
-            this.chb_filtration.Text = "Отфильтровать";
-            this.chb_filtration.UseVisualStyleBackColor = true;
+            this.chbFiltration.AutoSize = true;
+            this.chbFiltration.Dock = System.Windows.Forms.DockStyle.Top;
+            this.chbFiltration.Location = new System.Drawing.Point(190, 16);
+            this.chbFiltration.Name = "chbFiltration";
+            this.chbFiltration.Size = new System.Drawing.Size(107, 17);
+            this.chbFiltration.TabIndex = 1;
+            this.chbFiltration.Text = "Отфильтровать";
+            this.chbFiltration.UseVisualStyleBackColor = true;
             // 
-            // tb_search_filtration
+            // tbSearchFiltration
             // 
-            this.tb_search_filtration.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tb_search_filtration.Location = new System.Drawing.Point(4, 19);
-            this.tb_search_filtration.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_search_filtration.Name = "tb_search_filtration";
-            this.tb_search_filtration.Size = new System.Drawing.Size(248, 22);
-            this.tb_search_filtration.TabIndex = 0;
+            this.tbSearchFiltration.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tbSearchFiltration.Location = new System.Drawing.Point(3, 16);
+            this.tbSearchFiltration.Name = "tbSearchFiltration";
+            this.tbSearchFiltration.Size = new System.Drawing.Size(187, 20);
+            this.tbSearchFiltration.TabIndex = 0;
             // 
-            // pn_cancel
+            // pnCancel
             // 
-            this.pn_cancel.Controls.Add(this.btn_cancel);
-            this.pn_cancel.Controls.Add(this.btn_errors);
-            this.pn_cancel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pn_cancel.Location = new System.Drawing.Point(0, 539);
-            this.pn_cancel.Margin = new System.Windows.Forms.Padding(4);
-            this.pn_cancel.Name = "pn_cancel";
-            this.pn_cancel.Size = new System.Drawing.Size(400, 31);
-            this.pn_cancel.TabIndex = 41;
+            this.pnCancel.Controls.Add(this.btnCancel);
+            this.pnCancel.Controls.Add(this.btnErrors);
+            this.pnCancel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnCancel.Location = new System.Drawing.Point(0, 438);
+            this.pnCancel.Name = "pnCancel";
+            this.pnCancel.Size = new System.Drawing.Size(300, 25);
+            this.pnCancel.TabIndex = 41;
             // 
-            // btn_cancel
+            // btnCancel
             // 
-            this.btn_cancel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_cancel.Location = new System.Drawing.Point(304, 0);
-            this.btn_cancel.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(96, 31);
-            this.btn_cancel.TabIndex = 36;
-            this.btn_cancel.Text = "Закрыть";
-            this.btn_cancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnCancel.Location = new System.Drawing.Point(228, 0);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(72, 25);
+            this.btnCancel.TabIndex = 36;
+            this.btnCancel.Text = "Закрыть";
+            this.btnCancel.UseVisualStyleBackColor = true;
             // 
-            // btn_errors
+            // btnErrors
             // 
-            this.btn_errors.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btn_errors.Location = new System.Drawing.Point(0, 0);
-            this.btn_errors.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_errors.Name = "btn_errors";
-            this.btn_errors.Size = new System.Drawing.Size(89, 31);
-            this.btn_errors.TabIndex = 35;
-            this.btn_errors.Text = "Ошибки";
-            this.btn_errors.UseVisualStyleBackColor = true;
+            this.btnErrors.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnErrors.Location = new System.Drawing.Point(0, 0);
+            this.btnErrors.Name = "btnErrors";
+            this.btnErrors.Size = new System.Drawing.Size(67, 25);
+            this.btnErrors.TabIndex = 35;
+            this.btnErrors.Text = "Ошибки";
+            this.btnErrors.UseVisualStyleBackColor = true;
             // 
-            // gb_manipulation
+            // lbAminities
             // 
-            this.gb_manipulation.Controls.Add(this.pn_manipulation);
-            this.gb_manipulation.Controls.Add(this.pn_service_data);
-            this.gb_manipulation.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gb_manipulation.Location = new System.Drawing.Point(0, 337);
-            this.gb_manipulation.Margin = new System.Windows.Forms.Padding(4);
-            this.gb_manipulation.Name = "gb_manipulation";
-            this.gb_manipulation.Padding = new System.Windows.Forms.Padding(4);
-            this.gb_manipulation.Size = new System.Drawing.Size(400, 202);
-            this.gb_manipulation.TabIndex = 42;
-            this.gb_manipulation.TabStop = false;
-            this.gb_manipulation.Text = "Манипуляция данными";
+            this.lbAminities.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbAminities.FormattingEnabled = true;
+            this.lbAminities.Location = new System.Drawing.Point(0, 38);
+            this.lbAminities.Name = "lbAminities";
+            this.lbAminities.Size = new System.Drawing.Size(300, 400);
+            this.lbAminities.TabIndex = 37;
             // 
-            // pn_manipulation
+            // gbManipulation
             // 
-            this.pn_manipulation.Controls.Add(this.btn_delete);
-            this.pn_manipulation.Controls.Add(this.btn_update);
-            this.pn_manipulation.Controls.Add(this.btn_insert);
-            this.pn_manipulation.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pn_manipulation.Location = new System.Drawing.Point(4, 101);
-            this.pn_manipulation.Margin = new System.Windows.Forms.Padding(4);
-            this.pn_manipulation.Name = "pn_manipulation";
-            this.pn_manipulation.Size = new System.Drawing.Size(392, 96);
-            this.pn_manipulation.TabIndex = 42;
+            this.gbManipulation.Controls.Add(this.pnManipulation);
+            this.gbManipulation.Controls.Add(this.pnServiceData);
+            this.gbManipulation.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.gbManipulation.Location = new System.Drawing.Point(0, 274);
+            this.gbManipulation.Name = "gbManipulation";
+            this.gbManipulation.Size = new System.Drawing.Size(300, 164);
+            this.gbManipulation.TabIndex = 42;
+            this.gbManipulation.TabStop = false;
+            this.gbManipulation.Text = "Манипуляция данными";
             // 
-            // btn_delete
+            // pnManipulation
             // 
-            this.btn_delete.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_delete.Location = new System.Drawing.Point(0, 64);
-            this.btn_delete.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(392, 32);
-            this.btn_delete.TabIndex = 34;
-            this.btn_delete.Text = "Удалить данные услуги";
-            this.btn_delete.UseVisualStyleBackColor = true;
+            this.pnManipulation.Controls.Add(this.btnDelete);
+            this.pnManipulation.Controls.Add(this.btnUpdate);
+            this.pnManipulation.Controls.Add(this.btnInsert);
+            this.pnManipulation.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnManipulation.Location = new System.Drawing.Point(3, 83);
+            this.pnManipulation.Name = "pnManipulation";
+            this.pnManipulation.Size = new System.Drawing.Size(294, 78);
+            this.pnManipulation.TabIndex = 42;
             // 
-            // btn_update
+            // btnDelete
             // 
-            this.btn_update.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_update.Location = new System.Drawing.Point(0, 32);
-            this.btn_update.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(392, 32);
-            this.btn_update.TabIndex = 33;
-            this.btn_update.Text = "Изменить данные услуги";
-            this.btn_update.UseVisualStyleBackColor = true;
+            this.btnDelete.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDelete.Location = new System.Drawing.Point(0, 52);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(294, 26);
+            this.btnDelete.TabIndex = 34;
+            this.btnDelete.Text = "Удалить данные услуги";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // btn_insert
+            // btnUpdate
             // 
-            this.btn_insert.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_insert.Location = new System.Drawing.Point(0, 0);
-            this.btn_insert.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_insert.Name = "btn_insert";
-            this.btn_insert.Size = new System.Drawing.Size(392, 32);
-            this.btn_insert.TabIndex = 32;
-            this.btn_insert.Text = "Добавить данные услуги";
-            this.btn_insert.UseVisualStyleBackColor = true;
+            this.btnUpdate.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUpdate.Location = new System.Drawing.Point(0, 26);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(294, 26);
+            this.btnUpdate.TabIndex = 33;
+            this.btnUpdate.Text = "Изменить данные услуги";
+            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // pn_service_data
+            // btnInsert
             // 
-            this.pn_service_data.Controls.Add(this.tb_price);
-            this.pn_service_data.Controls.Add(this.lbl_price);
-            this.pn_service_data.Controls.Add(this.tb_name_service);
-            this.pn_service_data.Controls.Add(this.lbl_name_service);
-            this.pn_service_data.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pn_service_data.Location = new System.Drawing.Point(4, 19);
-            this.pn_service_data.Margin = new System.Windows.Forms.Padding(4);
-            this.pn_service_data.Name = "pn_service_data";
-            this.pn_service_data.Size = new System.Drawing.Size(392, 82);
-            this.pn_service_data.TabIndex = 41;
+            this.btnInsert.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInsert.Location = new System.Drawing.Point(0, 0);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(294, 26);
+            this.btnInsert.TabIndex = 32;
+            this.btnInsert.Text = "Добавить данные услуги";
+            this.btnInsert.UseVisualStyleBackColor = true;
             // 
-            // tb_price
+            // pnServiceData
             // 
-            this.tb_price.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tb_price.Location = new System.Drawing.Point(0, 56);
-            this.tb_price.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_price.Name = "tb_price";
-            this.tb_price.Size = new System.Drawing.Size(392, 22);
-            this.tb_price.TabIndex = 30;
+            this.pnServiceData.Controls.Add(this.tbPrice);
+            this.pnServiceData.Controls.Add(this.lblPrice);
+            this.pnServiceData.Controls.Add(this.tbNameService);
+            this.pnServiceData.Controls.Add(this.lblNameService);
+            this.pnServiceData.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnServiceData.Location = new System.Drawing.Point(3, 16);
+            this.pnServiceData.Name = "pnServiceData";
+            this.pnServiceData.Size = new System.Drawing.Size(294, 67);
+            this.pnServiceData.TabIndex = 41;
             // 
-            // lbl_price
+            // tbPrice
             // 
-            this.lbl_price.AutoSize = true;
-            this.lbl_price.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_price.Location = new System.Drawing.Point(0, 39);
-            this.lbl_price.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_price.Name = "lbl_price";
-            this.lbl_price.Size = new System.Drawing.Size(124, 17);
-            this.lbl_price.TabIndex = 29;
-            this.lbl_price.Text = "Стоимость услуги";
+            this.tbPrice.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbPrice.Location = new System.Drawing.Point(0, 46);
+            this.tbPrice.Name = "tbPrice";
+            this.tbPrice.Size = new System.Drawing.Size(294, 20);
+            this.tbPrice.TabIndex = 30;
             // 
-            // tb_name_service
+            // lblPrice
             // 
-            this.tb_name_service.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tb_name_service.Location = new System.Drawing.Point(0, 17);
-            this.tb_name_service.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_name_service.Name = "tb_name_service";
-            this.tb_name_service.Size = new System.Drawing.Size(392, 22);
-            this.tb_name_service.TabIndex = 28;
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblPrice.Location = new System.Drawing.Point(0, 33);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(98, 13);
+            this.lblPrice.TabIndex = 29;
+            this.lblPrice.Text = "Стоимость услуги";
             // 
-            // lbl_name_service
+            // tbNameService
             // 
-            this.lbl_name_service.AutoSize = true;
-            this.lbl_name_service.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbl_name_service.Location = new System.Drawing.Point(0, 0);
-            this.lbl_name_service.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_name_service.Name = "lbl_name_service";
-            this.lbl_name_service.Size = new System.Drawing.Size(118, 17);
-            this.lbl_name_service.TabIndex = 27;
-            this.lbl_name_service.Text = "Название услуги";
+            this.tbNameService.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbNameService.Location = new System.Drawing.Point(0, 13);
+            this.tbNameService.Name = "tbNameService";
+            this.tbNameService.Size = new System.Drawing.Size(294, 20);
+            this.tbNameService.TabIndex = 28;
             // 
-            // dgvAmenities
+            // lblNameService
             // 
-            this.dgvAmenities.AllowUserToAddRows = false;
-            this.dgvAmenities.AllowUserToDeleteRows = false;
-            this.dgvAmenities.BackgroundColor = System.Drawing.Color.White;
-            this.dgvAmenities.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAmenities.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvAmenities.Location = new System.Drawing.Point(0, 47);
-            this.dgvAmenities.Name = "dgvAmenities";
-            this.dgvAmenities.ReadOnly = true;
-            this.dgvAmenities.RowTemplate.Height = 24;
-            this.dgvAmenities.Size = new System.Drawing.Size(400, 290);
-            this.dgvAmenities.TabIndex = 43;
+            this.lblNameService.AutoSize = true;
+            this.lblNameService.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblNameService.Location = new System.Drawing.Point(0, 0);
+            this.lblNameService.Name = "lblNameService";
+            this.lblNameService.Size = new System.Drawing.Size(93, 13);
+            this.lblNameService.TabIndex = 27;
+            this.lblNameService.Text = "Название услуги";
             // 
             // AmenitiesForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 570);
-            this.Controls.Add(this.dgvAmenities);
-            this.Controls.Add(this.gb_manipulation);
-            this.Controls.Add(this.pn_cancel);
-            this.Controls.Add(this.gb_search_filtration);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.ClientSize = new System.Drawing.Size(300, 463);
+            this.Controls.Add(this.gbManipulation);
+            this.Controls.Add(this.lbAminities);
+            this.Controls.Add(this.pnCancel);
+            this.Controls.Add(this.gbSearchFiltration);
             this.Name = "AmenitiesForm";
-            this.Text = "Amenities";
-            this.gb_search_filtration.ResumeLayout(false);
-            this.gb_search_filtration.PerformLayout();
-            this.pn_cancel.ResumeLayout(false);
-            this.gb_manipulation.ResumeLayout(false);
-            this.pn_manipulation.ResumeLayout(false);
-            this.pn_service_data.ResumeLayout(false);
-            this.pn_service_data.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAmenities)).EndInit();
+            this.Text = "Справочник Услуги";
+            this.gbSearchFiltration.ResumeLayout(false);
+            this.gbSearchFiltration.PerformLayout();
+            this.pnCancel.ResumeLayout(false);
+            this.gbManipulation.ResumeLayout(false);
+            this.pnManipulation.ResumeLayout(false);
+            this.pnServiceData.ResumeLayout(false);
+            this.pnServiceData.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox gb_search_filtration;
-        private System.Windows.Forms.CheckBox chb_filtration;
-        private System.Windows.Forms.TextBox tb_search_filtration;
-        private System.Windows.Forms.Panel pn_cancel;
-        private System.Windows.Forms.Button btn_cancel;
-        private System.Windows.Forms.Button btn_errors;
-        private System.Windows.Forms.GroupBox gb_manipulation;
-        private System.Windows.Forms.Panel pn_manipulation;
-        private System.Windows.Forms.Button btn_delete;
-        private System.Windows.Forms.Button btn_update;
-        private System.Windows.Forms.Button btn_insert;
-        private System.Windows.Forms.Panel pn_service_data;
-        private System.Windows.Forms.TextBox tb_price;
-        private System.Windows.Forms.Label lbl_price;
-        private System.Windows.Forms.TextBox tb_name_service;
-        private System.Windows.Forms.Label lbl_name_service;
-        private System.Windows.Forms.DataGridView dgvAmenities;
+        private System.Windows.Forms.GroupBox gbSearchFiltration;
+        private System.Windows.Forms.CheckBox chbFiltration;
+        private System.Windows.Forms.TextBox tbSearchFiltration;
+        private System.Windows.Forms.Panel pnCancel;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnErrors;
+        private System.Windows.Forms.ListBox lbAminities;
+        private System.Windows.Forms.GroupBox gbManipulation;
+        private System.Windows.Forms.Panel pnManipulation;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnInsert;
+        private System.Windows.Forms.Panel pnServiceData;
+        private System.Windows.Forms.TextBox tbPrice;
+        private System.Windows.Forms.Label lblPrice;
+        private System.Windows.Forms.TextBox tbNameService;
+        private System.Windows.Forms.Label lblNameService;
     }
 }

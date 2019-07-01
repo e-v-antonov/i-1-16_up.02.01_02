@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace CarService
 {
-    public partial class AuthorizationForm : Form
+    public partial class MainWindow : Form
     {
-        public AuthorizationForm()
+        public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ConnectionForm connectionForm = new ConnectionForm();
+            connectionForm.Show();
         }
     }
 }
