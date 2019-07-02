@@ -22,5 +22,11 @@ namespace CarService
             ConnectionForm connectionForm = new ConnectionForm();
             connectionForm.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DynamicObjects obj = new DynamicObjects();
+            obj.RecordAddedCreate();
+        }
     }
 }
