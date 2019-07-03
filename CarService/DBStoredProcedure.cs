@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 
+
 namespace CarService
 {
     class DBStoredProcedure
@@ -28,15 +29,16 @@ namespace CarService
 
             ExecuteStoredProcedure();
         }
-        public void SPDeloklientaUpdate(Int32 idDeloKlienta, string Surname, string Name, string Otchestvo, string Telefon)
+        public void SPDeloklientaUpdate(Int32 idDeloKlienta, string Surname, string Name, string Otchestvo, string Telefon, Int32 Kolvoposicheniy)
         {
             ConfigurationProcedure("Delo_klienta_Update");
 
-            storedProcedure.Parameters.AddWithValue("@ID_Delo_klienta", idDeloKlienta);
+            storedProcedure.Parameters.AddWithValue("@ID_dela_klineta", idDeloKlienta);
             storedProcedure.Parameters.AddWithValue("@Surname", Surname);
             storedProcedure.Parameters.AddWithValue("@Name", Name);
             storedProcedure.Parameters.AddWithValue("@Otchestvo", Otchestvo);
             storedProcedure.Parameters.AddWithValue("@Telefon", Telefon);
+            storedProcedure.Parameters.AddWithValue("@Kol_vo_posicheniy", Kolvoposicheniy);
 
             ExecuteStoredProcedure();
         }
@@ -52,13 +54,13 @@ namespace CarService
         {
             ConfigurationProcedure("Delo_klienta_Logical_Delete");
 
-            storedProcedure.Parameters.AddWithValue("@ID_Dela_Klineta", idDelaKlienta);
+            storedProcedure.Parameters.AddWithValue("@ID_dela_klineta", idDelaKlienta);
 
             ExecuteStoredProcedure();
         }
 
 
-        public void SPDelokavtolientaInsert(string Registrznak,string Identificnomer,string Marka, string Model, string Color, 
+        public void SPDeloavtoklientaInsert(string Registrznak, string Identificnomer, string Marka, string Model, string Color,
             Int32 Godvipuska, Int32 DeloklientaID)
         {
             ConfigurationProcedure("Delo_avto_klienta_Insert");
@@ -73,12 +75,12 @@ namespace CarService
 
             ExecuteStoredProcedure();
         }
-        public void SPDelokavtolientaUpdate(Int32 idDeloavtoklienta, string Registrznak, string Identificnomer, string Marka, string Model, string Color,
-            Int32 Godvipuska, Int32 DeloklientaID)
+        public void SPDeloavtoklientaUpdate(Int32 idDelaavtoklienta, string Registrznak, string Identificnomer, string Marka, string Model, string Color,
+            Int32 Godvipuska, Int32 DeloklientaID, Int32 Repaircarnow)
         {
             ConfigurationProcedure("Delo_avto_klienta_Update");
 
-            storedProcedure.Parameters.AddWithValue("@ID_Delo_avto_klienta", idDeloavtoklienta);
+            storedProcedure.Parameters.AddWithValue("@ID_Dela_avto_klienta", idDelaavtoklienta);
             storedProcedure.Parameters.AddWithValue("@Registr_znak", Registrznak);
             storedProcedure.Parameters.AddWithValue("@Identific_nomer", Identificnomer);
             storedProcedure.Parameters.AddWithValue("@Marka", Marka);
@@ -86,6 +88,7 @@ namespace CarService
             storedProcedure.Parameters.AddWithValue("@Color", Color);
             storedProcedure.Parameters.AddWithValue("@God_vipuska", Godvipuska);
             storedProcedure.Parameters.AddWithValue("@Delo_klienta_ID", DeloklientaID);
+            storedProcedure.Parameters.AddWithValue("@Repair_car_now", Repaircarnow);
 
             ExecuteStoredProcedure();
         }
@@ -147,7 +150,7 @@ namespace CarService
         {
             ConfigurationProcedure("Kvalif_sotrudnika_Insert");
 
-            
+
             storedProcedure.Parameters.AddWithValue("@Nazvanie_kvalif", Nazvaniekvalif);
 
             ExecuteStoredProcedure();
@@ -188,7 +191,7 @@ namespace CarService
 
             ExecuteStoredProcedure();
         }
-        public void SPRolisotrudnikovUpdate(Int32 idroli,string Nazvanieroli)
+        public void SPRolisotrudnikovUpdate(Int32 idroli, string Nazvanieroli)
         {
             ConfigurationProcedure("Roli_sotrudnikov_Update");
 
@@ -224,7 +227,7 @@ namespace CarService
             ExecuteStoredProcedure();
         }
 
-            public void SPZakaziUpdate(Int32 idzakaza, Int32 Nomerzakaza, Int32 DeloklientaID, Int32 DeloavtoklientaID)
+        public void SPZakaziUpdate(Int32 idzakaza, Int32 Nomerzakaza, Int32 DeloklientaID, Int32 DeloavtoklientaID, Int32 Zakazcompleted)
         {
             ConfigurationProcedure("Zakazi_Update");
 
@@ -232,6 +235,7 @@ namespace CarService
             storedProcedure.Parameters.AddWithValue("@Nomer_zakaza", Nomerzakaza);
             storedProcedure.Parameters.AddWithValue("@Delo_klienta_ID", DeloklientaID);
             storedProcedure.Parameters.AddWithValue("@Delo_avtoklienta_ID", DeloavtoklientaID);
+            storedProcedure.Parameters.AddWithValue("@Zakaz_completed", Zakazcompleted);
 
             ExecuteStoredProcedure();
         }
@@ -252,22 +256,25 @@ namespace CarService
 
             ExecuteStoredProcedure();
         }
-        public void SPSootvetzakazuuslugInsert(Int32 UslugiID, Int32 ZakaziID)
+        public void SPSootvetzakazuuslugInsert(Int32 UslugiID, Int32 ZakaziID, Int32 DelosotrudnikaID)
         {
             ConfigurationProcedure("Sootvet_zakazu_uslug_Insert");
 
             storedProcedure.Parameters.AddWithValue("@Uslugi_ID", UslugiID);
             storedProcedure.Parameters.AddWithValue("@Zakazi_ID", ZakaziID);
+            storedProcedure.Parameters.AddWithValue("@Delo_sotrudnika_ID", DelosotrudnikaID);
 
             ExecuteStoredProcedure();
         }
-        public void SPSootvetzakazuuslugUpdate(Int32 idsootvet, Int32 UslugiID, Int32 ZakaziID)
+        public void SPSootvetzakazuuslugUpdate(Int32 idsootvet, Int32 UslugiID, Int32 ZakaziID, Int32 DelosotrudnikaID, Int32 Uslugadone)
         {
             ConfigurationProcedure("Sootvet_zakazu_uslug_Update");
 
             storedProcedure.Parameters.AddWithValue("@ID_sootvet", idsootvet);
             storedProcedure.Parameters.AddWithValue("@Uslugi_ID", UslugiID);
             storedProcedure.Parameters.AddWithValue("@Zakazi_ID", ZakaziID);
+            storedProcedure.Parameters.AddWithValue("@Delo_sotrudnika_ID", DelosotrudnikaID);
+            storedProcedure.Parameters.AddWithValue("@Usluga_done", Uslugadone);
 
             ExecuteStoredProcedure();
         }
@@ -288,7 +295,7 @@ namespace CarService
             ExecuteStoredProcedure();
         }
         public void SPDelosotrudnikaInsert(string Surname, string Name, string Otchestvo, string Telefon, Int32 Kolvoletstaga,
-        decimal Kolvozarplati, string Login, string Password, Int32 RolisotrudnikovID, Int32 KvalifsotrudnikaID, Int32 UslugiID)
+        decimal Kolvozarplati, string Login, string Password, Int32 RolisotrudnikovID, Int32 KvalifsotrudnikaID)
         {
             ConfigurationProcedure("Delo_sotrudnika_Insert");
 
@@ -302,12 +309,12 @@ namespace CarService
             storedProcedure.Parameters.AddWithValue("@Password", Password);
             storedProcedure.Parameters.AddWithValue("@Roli_sotrudnikov_ID", RolisotrudnikovID);
             storedProcedure.Parameters.AddWithValue("@Kvalif_sotrudnika_ID", KvalifsotrudnikaID);
-            storedProcedure.Parameters.AddWithValue("@Uslugi_ID", UslugiID);
+            
 
             ExecuteStoredProcedure();
         }
         public void SPDelosotrudnikaUpdate(Int32 iddelasotrudnika, string Surname, string Name, string Otchestvo, string Telefon, Int32 Kolvoletstaga,
-        decimal Kolvozarplati, string Login, string Password, Int32 RolisotrudnikovID, Int32 KvalifsotrudnikaID, Int32 UslugiID)
+        decimal Kolvozarplati, string Login, string Password, Int32 RolisotrudnikovID, Int32 KvalifsotrudnikaID)
         {
             ConfigurationProcedure("Delo_sotrudnika_Update");
 
@@ -322,7 +329,7 @@ namespace CarService
             storedProcedure.Parameters.AddWithValue("@Password", Password);
             storedProcedure.Parameters.AddWithValue("@Roli_sotrudnikov_ID", RolisotrudnikovID);
             storedProcedure.Parameters.AddWithValue("@Kvalif_sotrudnika_ID", KvalifsotrudnikaID);
-            storedProcedure.Parameters.AddWithValue("@Uslugi_ID", UslugiID);
+            
 
             ExecuteStoredProcedure();
         }
